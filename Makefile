@@ -110,6 +110,23 @@ $(call help,make template,"update from the latest cookiecutter template")
 template: python
 	@pyenv exec tox -e template -- $(cookiecutter)
 
+DOCKER_TAG = dev
+
+.PHONY: docker
+$(call help,make docker,"make the app's docker image")
+docker:
+	@git archive --format=tar HEAD | docker build -t hypothesis/pyramid-app-cookiecutter-test:$(DOCKER_TAG) -
+
+.PHONY: run-docker
+$(call help,make docker-run,"run the app's docker image")
+docker-run:
+	@docker run \
+		--add-host host.docker.internal:host-gateway \
+		--env-file .docker.env \
+		--env-file .devdata.env \
+		-p 9800:9800 \
+		hypothesis/pyramid-app-cookiecutter-test:$(DOCKER_TAG)
+
 .PHONY: clean
 $(call help,make clean,"delete temporary files etc")
 clean:
