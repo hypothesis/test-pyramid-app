@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/hypothesis/cookiecutters",
+  "directory": "pyramid-app",
+  "ignore": [],
+  "extra_context": {
+    "name": "Pyramid App Cookiecutter Test",
+    "package_name": "pyramid_app_cookiecutter_test",
+    "slug": "pyramid-app-cookiecutter-test",
+    "short_description": "A test app for our pyramid-app cookiecutter.",
+    "python_version": "3.10.4",
+    "port": "9800",
+    "github_owner": "hypothesis",
+    "copyright_holder": "Hypothesis",
+    "public": "no",
+    "__github_url": "https://github.com/hypothesis/pyramid-app-cookiecutter-test",
+    "__dependabot_interval": "weekly",
+    "__docker": "no",
+    "__docker_namespace": "hypothesis",
+    "__docker_network": "pyramid_app_cookiecutter_test_default",
+    "__services": "no",
+    "__db": "no",
+    "__frontend": "no",
+    "__frontend_typechecking": "no"
+  }
+}
