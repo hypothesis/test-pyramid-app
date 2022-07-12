@@ -11,15 +11,14 @@
     "port": "9800",
     "github_owner": "hypothesis",
     "copyright_holder": "Hypothesis",
-    "public": "no",
+    "visibility": "private",
     "__github_url": "https://github.com/hypothesis/pyramid-app-cookiecutter-test",
-    "__dependabot_interval": "weekly",
-    "__docker": "yes",
+    "docker": "yes",
     "__docker_namespace": "hypothesis",
     "__docker_network": "pyramid_app_cookiecutter_test_default",
-    "__services": "no",
-    "__db": "no",
-    "__frontend": "no",
+    "services": "no",
+    "db": "no",
+    "frontend": "no",
     "__frontend_typechecking": "no"
   }
 }
