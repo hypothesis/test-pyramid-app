@@ -37,6 +37,9 @@ ignore = [
 branch = true
 parallel = true
 source = ["pyramid_app_cookiecutter_test", "tests/unit"]
+omit = [
+    "*/pyramid_app_cookiecutter_test/__main__.py",
+]
 
 [tool.coverage.paths]
 source = ["src", ".tox/*tests/lib/python*/site-packages"]
