@@ -99,7 +99,7 @@ zope-interface==5.4.0
     #   pyramid
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==22.1.2
+pip==22.2.1
     # via pip-tools
 setuptools==63.3.0
     # via
