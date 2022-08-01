@@ -32,7 +32,7 @@ zope-interface==5.4.0
     # via pyramid
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==63.1.0
+setuptools==63.3.0
     # via
     #   gunicorn
     #   plaster
