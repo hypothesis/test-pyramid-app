@@ -5,13 +5,8 @@ help = help::; @echo $$$$(tput bold)$(strip $(1)):$$$$(tput sgr0) $(strip $(2))
 $(call help,make help,print this help message)
 
 .PHONY: services
-$(call help,make services,start the services that the app needs)
-services: args?=up -d
-services: python
 
 .PHONY: devdata
-$(call help,make devdata,load development data and environment variables)
-devdata: python
 
 .PHONY: dev
 $(call help,make dev,run the whole app \(all workers\))
@@ -61,6 +56,7 @@ functests: python
 
 .PHONY: sure
 $(call help,make sure,"make sure that the formatting$(comma) linting and tests all pass")
+sure: python
 sure:
 	@pyenv exec tox --parallel -qe 'checkformatting,lint,tests,coverage,functests'
 
