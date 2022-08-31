@@ -8,7 +8,7 @@ gunicorn==20.1.0
     # via -r requirements/prod.in
 hupper==1.10.3
     # via pyramid
-newrelic==7.16.0.178
+newrelic==8.0.0.179
     # via -r requirements/prod.in
 pastedeploy==2.1.1
     # via plaster-pastedeploy
