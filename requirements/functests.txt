@@ -18,7 +18,7 @@ faker==13.15.0
     # via factory-boy
 gunicorn==20.1.0
     # via -r requirements/prod.txt
-h-matchers==1.2.14
+h-matchers==1.2.15
     # via -r requirements/functests.in
 httpretty==1.1.4
     # via -r requirements/functests.in

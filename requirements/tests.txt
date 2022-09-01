@@ -20,7 +20,7 @@ freezegun==1.2.1
     # via -r requirements/tests.in
 gunicorn==20.1.0
     # via -r requirements/prod.txt
-h-matchers==1.2.14
+h-matchers==1.2.15
     # via -r requirements/tests.in
 httpretty==1.1.4
     # via -r requirements/tests.in
