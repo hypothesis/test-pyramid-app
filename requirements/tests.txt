@@ -16,7 +16,7 @@ factory-boy==3.2.1
     # via -r requirements/tests.in
 faker==13.15.0
     # via factory-boy
-freezegun==1.2.1
+freezegun==1.2.2
     # via -r requirements/tests.in
 gunicorn==20.1.0
     # via -r requirements/prod.txt
