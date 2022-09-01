@@ -68,7 +68,7 @@ lazy-object-proxy==1.7.1
     # via astroid
 mccabe==0.7.0
     # via pylint
-newrelic==7.16.0.178
+newrelic==8.0.0.179
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
