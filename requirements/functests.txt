@@ -59,7 +59,7 @@ pyparsing==3.0.9
     # via packaging
 pyramid==2.0
     # via -r requirements/prod.txt
-pytest==7.1.2
+pytest==7.1.3
     # via -r requirements/functests.in
 python-dateutil==2.8.2
     # via faker
