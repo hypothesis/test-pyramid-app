@@ -88,7 +88,7 @@ pep517==0.13.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   build
-pip-tools==6.8.0
+pip-tools==6.9.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/lint.in
