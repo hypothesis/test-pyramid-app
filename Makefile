@@ -116,7 +116,6 @@ docker-run:
 	@docker run \
 		--add-host host.docker.internal:host-gateway \
 		--env-file .docker.env \
-		--env-file .devdata.env \
 		-p 9800:9800 \
 		hypothesis/pyramid-app-cookiecutter-test:$(DOCKER_TAG)
 

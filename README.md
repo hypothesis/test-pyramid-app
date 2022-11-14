@@ -13,23 +13,20 @@ First you'll need to install:
 
 * [Git](https://git-scm.com/).
   On Ubuntu: `sudo apt install git`, on macOS: `brew install git`.
+* [GNU Make](https://www.gnu.org/software/make/).
+  This is probably already installed, run `make --version` to check.
 * [pyenv](https://github.com/pyenv/pyenv).
-  See [pyenv's README](https://github.com/pyenv/pyenv#readme) for install instructions.
-  First you need to [install the Python build dependencies](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
-  then on macOS use the **Homebrew** installation method,
-  on Ubuntu use the **Basic GitHub Checkout** method.
+  Follow the instructions in pyenv's README to install it.
+  The **Homebrew** method works best on macOS.
+  The **Basic GitHub Checkout** method works best on Ubuntu.
   You _don't_ need to set up pyenv's shell integration ("shims"), you can
   [use pyenv without shims](https://github.com/pyenv/pyenv#using-pyenv-without-shims).
-* [GNU Make](https://www.gnu.org/software/make/).
-  This is probably already installed or will have been installed while installing pyenv, run `make --version` to check.
 
 Then to set up your development environment:
 
 ```terminal
 git clone https://github.com/hypothesis/pyramid-app-cookiecutter-test.git
-cd pyramid_app_cookiecutter_test
-make services
-make devdata
+cd pyramid-app-cookiecutter-test
 make help
 ```
 
