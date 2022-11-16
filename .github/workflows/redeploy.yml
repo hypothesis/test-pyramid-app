@@ -16,22 +16,22 @@ on:
         - Production (Edu)
 jobs:
   QA:
-    if: inputs.environment == "QA"
+    if: inputs.environment == 'QA'
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is the QA job"
   QA (Edu):
-    if: inputs.environment == "QA (Edu)"
+    if: inputs.environment == 'QA (Edu)'
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is the QA (Edu) job"
   Production:
-    if: inputs.environment == "Production"
+    if: inputs.environment == 'Production'
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is the Production job"
   Production (Edu):
-    if: inputs.environment == "Production (Edu)"
+    if: inputs.environment == 'Production (Edu)'
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is the Production (Edu) job"
