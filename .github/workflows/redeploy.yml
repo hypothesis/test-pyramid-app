@@ -1,0 +1,29 @@
+# Redeploy the currently deployed version of the app, a.k.a "turn if off and on again".
+name: Redeploy
+concurrency:
+  group: ${{ github.event.repository.name }}-deploy
+  cancel-in-progress: true
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        type: choice
+        options:
+        - QA
+        - QA (Edu)
+        - Production
+        - Production (Edu)
+jobs:
+  QA:
+    if: inputs.environment == "QA"
+    run: echo "This is the QA job"
+  QA (Edu):
+    if: inputs.environment == "QA (Edu)"
+    run: echo "This is the QA (Edu) job"
+  Production:
+    if: inputs.environment == "Production"
+    run: echo "This is the Production job"
+  Production (Edu):
+    if: inputs.environment == "Production (Edu)"
+    run: echo "This is the Production (Edu) job"
