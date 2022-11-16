@@ -20,7 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is the QA job"
-  QA (Edu):
+  QA_Edu:
+    name: QA (Edu)
     if: inputs.environment == 'QA (Edu)'
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is the Production job"
-  Production (Edu):
+  Production_Edu:
+    name: Production (Edu)
     if: inputs.environment == 'Production (Edu)'
     runs-on: ubuntu-latest
     steps:
