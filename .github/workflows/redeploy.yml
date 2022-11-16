@@ -17,13 +17,17 @@ on:
 jobs:
   QA:
     if: inputs.environment == "QA"
-    run: echo "This is the QA job"
+    steps:
+      - run: echo "This is the QA job"
   QA (Edu):
     if: inputs.environment == "QA (Edu)"
-    run: echo "This is the QA (Edu) job"
+    steps:
+      - run: echo "This is the QA (Edu) job"
   Production:
     if: inputs.environment == "Production"
-    run: echo "This is the Production job"
+    steps:
+      - run: echo "This is the Production job"
   Production (Edu):
     if: inputs.environment == "Production (Edu)"
-    run: echo "This is the Production (Edu) job"
+    steps:
+      - run: echo "This is the Production (Edu) job"
