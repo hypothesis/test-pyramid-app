@@ -1,0 +1,36 @@
+name: Deploy
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  CI:
+    steps:
+    - run: sleep 30
+  Docker_Hub:
+    name: Docker Hub
+    needs: CI
+    steps:
+    - run: sleep 30
+  QA:
+    needs: [Docker_Hub]
+    steps:
+    - run: sleep 30
+  QA_Edu:
+    name: QA (Edu)
+    needs: [Docker_Hub]
+    steps:
+    - run: sleep 30
+  Production:
+    needs: [Docker_Hub, QA]
+    steps:
+    - run: sleep 30
+  Production_Edu:
+    name: Production (Edu)
+    needs: [Docker_Hub, QA_Edu]
+    steps:
+    - run: sleep 30
