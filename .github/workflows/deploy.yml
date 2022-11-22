@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: sleep 30
+    - run: false
   QA_Edu:
     name: QA (Edu)
     needs: [Docker_Hub]
