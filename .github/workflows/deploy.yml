@@ -9,28 +9,34 @@ on:
       - main
 jobs:
   CI:
+    runs-on: ubuntu-latest
     steps:
     - run: sleep 30
   Docker_Hub:
     name: Docker Hub
     needs: CI
+    runs-on: ubuntu-latest
     steps:
     - run: sleep 30
   QA:
     needs: [Docker_Hub]
+    runs-on: ubuntu-latest
     steps:
     - run: sleep 30
   QA_Edu:
     name: QA (Edu)
     needs: [Docker_Hub]
+    runs-on: ubuntu-latest
     steps:
     - run: sleep 30
   Production:
     needs: [Docker_Hub, QA]
+    runs-on: ubuntu-latest
     steps:
     - run: sleep 30
   Production_Edu:
     name: Production (Edu)
     needs: [Docker_Hub, QA_Edu]
+    runs-on: ubuntu-latest
     steps:
     - run: sleep 30
