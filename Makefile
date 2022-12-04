@@ -5,6 +5,10 @@ help = help::; @echo $$$$(tput bold)$(strip $(1)):$$$$(tput sgr0) $(strip $(2))
 $(call help,make help,print this help message)
 
 .PHONY: services
+$(call help,make services,start the services that the app needs)
+services: args?=up -d
+services: python
+	@docker compose $(args)
 
 .PHONY: devdata
 
@@ -22,6 +26,11 @@ web: python
 $(call help,make shell,"launch a Python shell in this project's virtualenv")
 shell: python
 	@pyenv exec tox -qe dev --run-command 'pshell conf/development.ini'
+
+.PHONY: sql
+$(call help,make sql,"Connect to the dev database with a psql shell")
+sql: python
+	@docker compose exec postgres psql --pset expanded=auto -U postgres
 
 .PHONY: lint
 $(call help,make lint,"lint the code and print any warnings")
@@ -114,6 +123,7 @@ $(call help,make docker-run,"run the app's docker image")
 docker-run:
 	@docker run \
 		--add-host host.docker.internal:host-gateway \
+		--net pyramid_app_cookiecutter_test_default \
 		--env-file .docker.env \
 		-p 9800:9800 \
 		hypothesis/pyramid-app-cookiecutter-test:$(DOCKER_TAG)
