@@ -19,9 +19,9 @@
     "docker": "yes",
     "__docker_namespace": "hypothesis",
     "__docker_network": "pyramid_app_cookiecutter_test_default",
-    "services": "no",
-    "db": "no",
+    "postgres": "yes",
     "frontend": "no",
+    "__postgres_port": "5438",
     "__frontend_typechecking": "no"
   }
 }

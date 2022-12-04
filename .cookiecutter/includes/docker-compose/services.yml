@@ -1,0 +1,11 @@
+elasticsearch:
+  image: hypothesis/elasticsearch:latest
+  ports:
+    - '127.0.0.1:9201:9200'
+  environment:
+    - discovery.type=single-node
+rabbit:
+  image: rabbitmq:3.6-management-alpine
+  ports:
+    - '127.0.0.1:5675:5672'
+    - '127.0.0.1:15675:15672'
