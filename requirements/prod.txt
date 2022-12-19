@@ -4,6 +4,8 @@
 #
 #    pip-compile --allow-unsafe requirements/prod.in
 #
+greenlet==2.0.1
+    # via sqlalchemy
 gunicorn==20.1.0
     # via -r requirements/prod.in
 hupper==1.10.3
@@ -18,7 +20,11 @@ plaster==1.0
     #   pyramid
 plaster-pastedeploy==0.7
     # via pyramid
+psycopg2==2.9.5
+    # via -r requirements/prod.in
 pyramid==2.0
+    # via -r requirements/prod.in
+sqlalchemy==1.4.45
     # via -r requirements/prod.in
 translationstring==1.4
     # via pyramid

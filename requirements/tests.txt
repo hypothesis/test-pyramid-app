@@ -20,6 +20,10 @@ faker==13.15.0
     # via factory-boy
 freezegun==1.2.2
     # via -r requirements/tests.in
+greenlet==2.0.1
+    # via
+    #   -r requirements/prod.txt
+    #   sqlalchemy
 gunicorn==20.1.0
     # via -r requirements/prod.txt
 h-matchers==1.2.15
@@ -57,6 +61,8 @@ plaster-pastedeploy==0.7
     #   pyramid
 pluggy==1.0.0
     # via pytest
+psycopg2==2.9.5
+    # via -r requirements/prod.txt
 pyparsing==3.0.9
     # via packaging
 pyramid==2.0
@@ -69,6 +75,8 @@ python-dateutil==2.8.2
     #   freezegun
 six==1.16.0
     # via python-dateutil
+sqlalchemy==1.4.45
+    # via -r requirements/prod.txt
 tomli==2.0.1
     # via
     #   build

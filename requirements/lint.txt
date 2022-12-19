@@ -45,6 +45,11 @@ faker==13.15.0
     #   factory-boy
 freezegun==1.2.2
     # via -r requirements/tests.txt
+greenlet==2.0.1
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
+    #   sqlalchemy
 gunicorn==20.1.0
     # via
     #   -r requirements/functests.txt
@@ -116,6 +121,10 @@ pluggy==1.0.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pytest
+psycopg2==2.9.5
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
 pycodestyle==2.10.0
     # via -r requirements/lint.in
 pydocstyle==6.1.1
@@ -152,6 +161,10 @@ soupsieve==2.3.2.post1
     # via
     #   -r requirements/functests.txt
     #   beautifulsoup4
+sqlalchemy==1.4.45
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
 toml==0.10.2
     # via -r requirements/lint.in
 tomli==2.0.1
