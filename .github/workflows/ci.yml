@@ -51,8 +51,6 @@ jobs:
         - 9201:9200
         env:
           discovery.type: single-node
-    env:
-      TEST_DATABASE_URL: postgresql://postgres@localhost:5438/pyramid_app_cookiecutter_test_test
     steps:
       - uses: actions/checkout@v3
       - name: Install Python
@@ -110,8 +108,6 @@ jobs:
         - 9201:9200
         env:
           discovery.type: single-node
-    env:
-      TEST_DATABASE_URL: postgresql://postgres@localhost:5438/pyramid_app_cookiecutter_test_test
     steps:
       - uses: actions/checkout@v3
       - name: Install Python

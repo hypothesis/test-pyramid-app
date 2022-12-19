@@ -1,3 +1,5 @@
 pyramid
 gunicorn
 newrelic
+sqlalchemy
+psycopg2
