@@ -7,11 +7,11 @@
 greenlet==2.0.1
     # via sqlalchemy
 gunicorn==20.1.0
-    # via -r requirements/prod.in
+    # via -r prod.in
 hupper==1.10.3
     # via pyramid
 newrelic==8.4.0
-    # via -r requirements/prod.in
+    # via -r prod.in
 pastedeploy==2.1.1
     # via plaster-pastedeploy
 plaster==1.0
@@ -21,11 +21,11 @@ plaster==1.0
 plaster-pastedeploy==0.7
     # via pyramid
 psycopg2==2.9.5
-    # via -r requirements/prod.in
+    # via -r prod.in
 pyramid==2.0
-    # via -r requirements/prod.in
+    # via -r prod.in
 sqlalchemy==1.4.45
-    # via -r requirements/prod.in
+    # via -r prod.in
 translationstring==1.4
     # via pyramid
 venusian==3.0.0
@@ -38,7 +38,7 @@ zope-interface==5.4.0
     # via pyramid
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==63.3.0
+setuptools==65.5.1
     # via
     #   gunicorn
     #   plaster
