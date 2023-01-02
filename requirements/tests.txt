@@ -11,64 +11,64 @@ build==0.8.0
 click==8.1.3
     # via pip-tools
 coverage[toml]==6.4.1
-    # via -r tests.in
+    # via -r requirements/tests.in
 exceptiongroup==1.0.1
     # via pytest
 factory-boy==3.2.1
-    # via -r tests.in
+    # via -r requirements/tests.in
 faker==13.15.0
     # via factory-boy
 freezegun==1.2.2
-    # via -r tests.in
+    # via -r requirements/tests.in
 greenlet==2.0.1
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   sqlalchemy
 gunicorn==20.1.0
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 h-matchers==1.2.15
-    # via -r tests.in
+    # via -r requirements/tests.in
 httpretty==1.1.4
-    # via -r tests.in
+    # via -r requirements/tests.in
 hupper==1.10.3
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 iniconfig==1.1.1
     # via pytest
-newrelic==8.4.0
-    # via -r prod.txt
+newrelic==8.5.0
+    # via -r requirements/prod.txt
 packaging==21.3
     # via
     #   build
     #   pytest
 pastedeploy==2.1.1
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   plaster-pastedeploy
 pep517==0.13.0
     # via build
 pip-tools==6.10.0
-    # via -r tests.in
+    # via -r requirements/tests.in
 plaster==1.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   plaster-pastedeploy
     #   pyramid
 plaster-pastedeploy==0.7
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 pluggy==1.0.0
     # via pytest
 psycopg2==2.9.5
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 pyparsing==3.0.9
     # via packaging
 pyramid==2.0
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 pytest==7.2.0
-    # via -r tests.in
+    # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
     #   faker
@@ -76,7 +76,7 @@ python-dateutil==2.8.2
 six==1.16.0
     # via python-dateutil
 sqlalchemy==1.4.45
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 tomli==2.0.1
     # via
     #   build
@@ -85,25 +85,25 @@ tomli==2.0.1
     #   pytest
 translationstring==1.4
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 venusian==3.0.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 webob==1.8.7
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 wheel==0.38.1
     # via pip-tools
 zope-deprecation==4.4.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 zope-interface==5.4.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 
 # The following packages are considered to be unsafe in a requirements file:
@@ -111,7 +111,7 @@ pip==22.2.1
     # via pip-tools
 setuptools==65.5.1
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   gunicorn
     #   pastedeploy
     #   pip-tools
