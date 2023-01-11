@@ -22,6 +22,7 @@
     "postgres": "yes",
     "frontend": "no",
     "__postgres_port": "5438",
-    "__frontend_typechecking": "no"
+    "__frontend_typechecking": "no",
+    "__copyright_year": "2022"
   }
 }
