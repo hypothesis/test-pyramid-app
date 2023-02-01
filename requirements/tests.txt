@@ -48,6 +48,8 @@ pastedeploy==2.1.1
     #   plaster-pastedeploy
 pep517==0.13.0
     # via build
+pip==22.2.1
+    # via pip-tools
 pip-tools==6.12.1
     # via -r requirements/tests.in
 plaster==1.0
@@ -67,12 +69,22 @@ pyparsing==3.0.9
     # via packaging
 pyramid==2.0
     # via -r requirements/prod.txt
-pytest==7.2.0
+pytest==7.2.1
     # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
     #   faker
     #   freezegun
+setuptools==65.5.1
+    # via
+    #   -r requirements/prod.txt
+    #   gunicorn
+    #   pastedeploy
+    #   pip-tools
+    #   plaster
+    #   pyramid
+    #   zope-deprecation
+    #   zope-interface
 six==1.16.0
     # via python-dateutil
 sqlalchemy==1.4.45
@@ -105,17 +117,3 @@ zope-interface==5.4.0
     # via
     #   -r requirements/prod.txt
     #   pyramid
-
-# The following packages are considered to be unsafe in a requirements file:
-pip==22.2.1
-    # via pip-tools
-setuptools==65.5.1
-    # via
-    #   -r requirements/prod.txt
-    #   gunicorn
-    #   pastedeploy
-    #   pip-tools
-    #   plaster
-    #   pyramid
-    #   zope-deprecation
-    #   zope-interface
