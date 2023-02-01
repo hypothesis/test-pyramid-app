@@ -98,11 +98,6 @@ pep517==0.13.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   build
-pip==22.2.1
-    # via
-    #   -r requirements/functests.txt
-    #   -r requirements/tests.txt
-    #   pip-tools
 pip-tools==6.12.1
     # via
     #   -r requirements/functests.txt
@@ -155,18 +150,6 @@ python-dateutil==2.8.2
     #   -r requirements/tests.txt
     #   faker
     #   freezegun
-setuptools==65.5.1
-    # via
-    #   -r requirements/functests.txt
-    #   -r requirements/tests.txt
-    #   astroid
-    #   gunicorn
-    #   pastedeploy
-    #   pip-tools
-    #   plaster
-    #   pyramid
-    #   zope-deprecation
-    #   zope-interface
 six==1.16.0
     # via
     #   -r requirements/functests.txt
@@ -178,7 +161,7 @@ soupsieve==2.3.2.post1
     # via
     #   -r requirements/functests.txt
     #   beautifulsoup4
-sqlalchemy==1.4.45
+sqlalchemy==2.0.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -200,6 +183,11 @@ translationstring==1.4
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pyramid
+typing-extensions==4.4.0
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
+    #   sqlalchemy
 venusian==3.0.0
     # via
     #   -r requirements/functests.txt

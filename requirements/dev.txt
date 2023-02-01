@@ -85,7 +85,7 @@ python-dateutil==2.8.2
     # via faker
 six==1.16.0
     # via python-dateutil
-sqlalchemy==1.4.45
+sqlalchemy==2.0.0
     # via -r requirements/prod.txt
 stack-data==0.3.0
     # via ipython
@@ -103,6 +103,10 @@ translationstring==1.4
     # via
     #   -r requirements/prod.txt
     #   pyramid
+typing-extensions==4.4.0
+    # via
+    #   -r requirements/prod.txt
+    #   sqlalchemy
 venusian==3.0.0
     # via
     #   -r requirements/prod.txt
