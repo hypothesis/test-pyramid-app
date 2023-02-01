@@ -72,7 +72,7 @@ iniconfig==1.1.1
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pytest
-isort==5.11.4
+isort==5.12.0
     # via pylint
 lazy-object-proxy==1.7.1
     # via astroid
@@ -98,6 +98,11 @@ pep517==0.13.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   build
+pip==22.2.1
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
+    #   pip-tools
 pip-tools==6.12.1
     # via
     #   -r requirements/functests.txt
@@ -150,6 +155,18 @@ python-dateutil==2.8.2
     #   -r requirements/tests.txt
     #   faker
     #   freezegun
+setuptools==65.5.1
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
+    #   astroid
+    #   gunicorn
+    #   pastedeploy
+    #   pip-tools
+    #   plaster
+    #   pyramid
+    #   zope-deprecation
+    #   zope-interface
 six==1.16.0
     # via
     #   -r requirements/functests.txt
@@ -217,22 +234,3 @@ zope-interface==5.4.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pyramid
-
-# The following packages are considered to be unsafe in a requirements file:
-pip==22.2.1
-    # via
-    #   -r requirements/functests.txt
-    #   -r requirements/tests.txt
-    #   pip-tools
-setuptools==65.5.1
-    # via
-    #   -r requirements/functests.txt
-    #   -r requirements/tests.txt
-    #   astroid
-    #   gunicorn
-    #   pastedeploy
-    #   pip-tools
-    #   plaster
-    #   pyramid
-    #   zope-deprecation
-    #   zope-interface
