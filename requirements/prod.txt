@@ -24,10 +24,12 @@ psycopg2==2.9.5
     # via -r requirements/prod.in
 pyramid==2.0
     # via -r requirements/prod.in
-sqlalchemy==1.4.45
+sqlalchemy==2.0.1
     # via -r requirements/prod.in
 translationstring==1.4
     # via pyramid
+typing-extensions==4.4.0
+    # via sqlalchemy
 venusian==3.0.0
     # via pyramid
 webob==1.8.7
