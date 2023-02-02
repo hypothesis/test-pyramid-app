@@ -73,7 +73,7 @@ six==1.16.0
     # via python-dateutil
 soupsieve==2.3.2.post1
     # via beautifulsoup4
-sqlalchemy==1.4.45
+sqlalchemy==2.0.1
     # via -r requirements/prod.txt
 tomli==2.0.1
     # via
@@ -84,6 +84,10 @@ translationstring==1.4
     # via
     #   -r requirements/prod.txt
     #   pyramid
+typing-extensions==4.4.0
+    # via
+    #   -r requirements/prod.txt
+    #   sqlalchemy
 venusian==3.0.0
     # via
     #   -r requirements/prod.txt
