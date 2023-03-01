@@ -17,18 +17,18 @@ decorator==5.1.1
 executing==0.8.3
     # via stack-data
 factory-boy==3.2.1
-    # via -r dev.in
+    # via -r requirements/dev.in
 faker==13.15.0
     # via factory-boy
 greenlet==2.0.1
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   sqlalchemy
 gunicorn==20.1.0
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 hupper==1.10.3
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 ipython==8.10.0
     # via pyramid-ipython
@@ -37,14 +37,14 @@ jedi==0.18.1
 matplotlib-inline==0.1.3
     # via ipython
 newrelic==8.5.0
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 packaging==21.3
     # via build
 parso==0.8.3
     # via jedi
 pastedeploy==2.1.1
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   plaster-pastedeploy
 pep517==0.13.0
     # via build
@@ -53,20 +53,20 @@ pexpect==4.8.0
 pickleshare==0.7.5
     # via ipython
 pip-tools==6.12.2
-    # via -r dev.in
+    # via -r requirements/dev.in
 plaster==1.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   plaster-pastedeploy
     #   pyramid
 plaster-pastedeploy==0.7
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 prompt-toolkit==3.0.30
     # via ipython
 psycopg2==2.9.5
-    # via -r prod.txt
+    # via -r requirements/prod.txt
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
@@ -77,20 +77,20 @@ pyparsing==3.0.9
     # via packaging
 pyramid==2.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid-ipython
 pyramid-ipython==0.2
-    # via -r dev.in
+    # via -r requirements/dev.in
 python-dateutil==2.8.2
     # via faker
 six==1.16.0
     # via python-dateutil
-sqlalchemy==2.0.1
-    # via -r prod.txt
+sqlalchemy==2.0.4
+    # via -r requirements/prod.txt
 stack-data==0.3.0
     # via ipython
 supervisor==4.2.5
-    # via -r dev.in
+    # via -r requirements/dev.in
 tomli==2.0.1
     # via
     #   build
@@ -101,31 +101,31 @@ traitlets==5.3.0
     #   matplotlib-inline
 translationstring==1.4
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 typing-extensions==4.4.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   sqlalchemy
 venusian==3.0.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 wcwidth==0.2.5
     # via prompt-toolkit
 webob==1.8.7
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 wheel==0.38.1
     # via pip-tools
 zope-deprecation==4.4.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 zope-interface==5.4.0
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   pyramid
 
 # The following packages are considered to be unsafe in a requirements file:
@@ -133,7 +133,7 @@ pip==22.2.1
     # via pip-tools
 setuptools==65.5.1
     # via
-    #   -r prod.txt
+    #   -r requirements/prod.txt
     #   gunicorn
     #   pastedeploy
     #   pip-tools

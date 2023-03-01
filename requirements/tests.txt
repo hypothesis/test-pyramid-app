@@ -75,7 +75,7 @@ python-dateutil==2.8.2
     #   freezegun
 six==1.16.0
     # via python-dateutil
-sqlalchemy==2.0.1
+sqlalchemy==2.0.4
     # via -r requirements/prod.txt
 tomli==2.0.1
     # via
