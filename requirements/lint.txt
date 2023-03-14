@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe requirements/lint.in
 #
-astroid==2.11.6
+astroid==2.15.0
     # via pylint
 attrs==21.4.0
     # via
@@ -129,7 +129,7 @@ pycodestyle==2.10.0
     # via -r requirements/lint.in
 pydocstyle==6.3.0
     # via -r requirements/lint.in
-pylint==2.14.5
+pylint==2.17.0
     # via -r requirements/lint.in
 pyparsing==3.0.9
     # via
@@ -187,6 +187,7 @@ typing-extensions==4.4.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
+    #   astroid
     #   sqlalchemy
 venusian==3.0.0
     # via
