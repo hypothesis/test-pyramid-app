@@ -63,7 +63,7 @@ psycopg2==2.9.5
     # via -r requirements/prod.txt
 pyparsing==3.0.9
     # via packaging
-pyramid==2.0
+pyramid==2.0.1
     # via -r requirements/prod.txt
 pytest==7.2.1
     # via -r requirements/functests.in
