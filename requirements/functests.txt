@@ -34,7 +34,7 @@ hupper==1.10.3
     #   pyramid
 iniconfig==1.1.1
     # via pytest
-newrelic==8.5.0
+newrelic==8.7.0
     # via -r requirements/prod.txt
 packaging==21.3
     # via
