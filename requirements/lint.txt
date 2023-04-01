@@ -140,7 +140,7 @@ pyramid==2.0.1
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
-pytest==7.2.1
+pytest==7.2.2
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
