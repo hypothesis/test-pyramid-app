@@ -46,7 +46,7 @@ pastedeploy==2.1.1
     #   plaster-pastedeploy
 pep517==0.13.0
     # via build
-pip-tools==6.12.2
+pip-tools==6.12.3
     # via -r requirements/functests.in
 plaster==1.0
     # via
