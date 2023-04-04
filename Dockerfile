@@ -10,6 +10,7 @@ COPY requirements/prod.txt ./
 RUN apk add --no-cache --virtual \
     build-deps \
     build-base \
+    postgresql-dev \
   && pip install --no-cache-dir -U pip \
   && pip install --no-cache-dir -r prod.txt \
   && apk del build-deps
