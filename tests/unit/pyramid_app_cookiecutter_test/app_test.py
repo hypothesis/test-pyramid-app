@@ -13,3 +13,7 @@ def test_create_app():
 
 def test_index():
     assert app.index(sentinel.request) == {"Hello": "Pyramid!"}
+
+
+def test_status():
+    assert app.status(sentinel.request) == {"status": "okay"}
