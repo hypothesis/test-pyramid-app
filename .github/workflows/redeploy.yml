@@ -1,0 +1,38 @@
+name: Redeploy
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+on:
+  workflow_dispatch:
+    inputs:
+      qa:
+        type: boolean
+        description: Redeploy QA
+      production:
+        type: boolean
+        description: Redeploy Production
+jobs:
+  qa:
+    name: QA
+    if: inputs.qa
+    uses: hypothesis/workflows/.github/workflows/deploy.yml@main
+    with:
+      operation: redeploy
+      github_environment_name: QA
+      github_environment_url: https://qa-test-pyramid-app.hypothes.is
+      aws_region: us-west-1
+      elasticbeanstalk_application: test-pyramid-app
+      elasticbeanstalk_environment: qa
+    secrets: inherit
+  production:
+    name: Production
+    if: inputs.production
+    uses: hypothesis/workflows/.github/workflows/deploy.yml@main
+    with:
+      operation: redeploy
+      github_environment_name: Production
+      github_environment_url: https://test-pyramid-app.hypothes.is
+      aws_region: us-west-1
+      elasticbeanstalk_application: test-pyramid-app
+      elasticbeanstalk_environment: prod
+    secrets: inherit
