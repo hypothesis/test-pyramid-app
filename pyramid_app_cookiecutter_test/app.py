@@ -5,6 +5,7 @@ from pyramid.view import view_config
 def create_app(_=None, **settings):
     with Configurator(settings=settings) as config:
         config.add_route("index", "/")
+        config.add_route("status", "/_status")
 
         config.scan()
 
@@ -14,3 +15,8 @@ def create_app(_=None, **settings):
 @view_config(route_name="index", renderer="json")
 def index(_request):
     return {"Hello": "Pyramid!"}
+
+
+@view_config(route_name="status", renderer="json", http_cache=0)
+def status(_request):
+    return {"status": "okay"}
