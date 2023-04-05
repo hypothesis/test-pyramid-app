@@ -1,0 +1,1 @@
+"ignore:^SelectableGroups dict interface is deprecated\\. Use select\\.$:DeprecationWarning:kombu",

@@ -1,0 +1,11 @@
+{
+  "programs": {
+    "web": {
+      "command": "gunicorn --bind :9800 --workers 1 --reload --timeout 0 --paste conf/development.ini"
+    },
+    "worker": {
+      "command": "celery -A test_pyramid_app.celery:app worker --loglevel=INFO"
+    }
+  }
+}
+

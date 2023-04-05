@@ -1,0 +1,10 @@
+{
+  "programs": {
+    "web": {
+      "command": "newrelic-admin run-program gunicorn --paste conf/production.ini --bind 0.0.0.0:9800"
+    },
+    "worker": {
+      "command": "newrelic-admin run-program celery -A test_pyramid_app.celery:app worker --loglevel INFO"
+    }
+  }
+}
