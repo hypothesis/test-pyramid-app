@@ -17,6 +17,8 @@ RUN apk add --no-cache --virtual \
 
 COPY . .
 
+EXPOSE 9800
+
 USER hypothesis
 
 CMD /usr/bin/supervisord -c /var/lib/hypothesis/conf/supervisord.conf
