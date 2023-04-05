@@ -1,7 +1,7 @@
 import pytest
 from webtest import TestApp
 
-from pyramid_app_cookiecutter_test.app import create_app
+from test_pyramid_app.app import create_app
 
 
 def test_index(app):

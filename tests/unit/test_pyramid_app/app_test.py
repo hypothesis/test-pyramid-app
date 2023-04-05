@@ -2,7 +2,7 @@ from unittest.mock import sentinel
 
 from pyramid.router import Router
 
-from pyramid_app_cookiecutter_test import app
+from test_pyramid_app import app
 
 
 def test_create_app():

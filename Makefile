@@ -116,17 +116,17 @@ DOCKER_TAG = dev
 .PHONY: docker
 $(call help,make docker,"make the app's docker image")
 docker:
-	@git archive --format=tar HEAD | docker build -t hypothesis/pyramid-app-cookiecutter-test:$(DOCKER_TAG) -
+	@git archive --format=tar HEAD | docker build -t hypothesis/test-pyramid-app:$(DOCKER_TAG) -
 
 .PHONY: docker-run
 $(call help,make docker-run,"run the app's docker image")
 docker-run:
 	@docker run \
 		--add-host host.docker.internal:host-gateway \
-		--net pyramid_app_cookiecutter_test_default \
+		--net test_pyramid_app_default \
 		--env-file .docker.env \
 		-p 9800:9800 \
-		hypothesis/pyramid-app-cookiecutter-test:$(DOCKER_TAG)
+		hypothesis/test-pyramid-app:$(DOCKER_TAG)
 
 .PHONY: clean
 $(call help,make clean,"delete temporary files etc")
@@ -139,4 +139,4 @@ clean:
 python:
 	@bin/make_python
 
--include pyramid_app_cookiecutter_test.mk
+-include test_pyramid_app.mk
