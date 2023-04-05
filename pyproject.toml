@@ -38,9 +38,9 @@ ignore = [
 [tool.coverage.run]
 branch = true
 parallel = true
-source = ["pyramid_app_cookiecutter_test", "tests/unit"]
+source = ["test_pyramid_app", "tests/unit"]
 omit = [
-    "*/pyramid_app_cookiecutter_test/__main__.py",
+    "*/test_pyramid_app/__main__.py",
 ]
 
 [tool.coverage.paths]
@@ -59,7 +59,7 @@ force_grid_wrap = 0
 use_parentheses = true
 line_length = 88
 default_section = "THIRDPARTY"
-known_first_party = ["pyramid_app_cookiecutter_test", "tests"]
+known_first_party = ["test_pyramid_app", "tests"]
 
 [tool.pylint.main]
 jobs = 0 # Use one process for CPU.
