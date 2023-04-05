@@ -11,6 +11,9 @@ services: python
 	@docker compose $(args)
 
 .PHONY: devdata
+$(call help,make devdata,load development data and environment variables)
+devdata: python
+	@tox -qe dev --run-command 'python bin/make_devdata'
 
 .PHONY: dev
 $(call help,make dev,run the whole app \(all workers\))
@@ -125,6 +128,7 @@ docker-run:
 		--add-host host.docker.internal:host-gateway \
 		--net test_pyramid_app_default \
 		--env-file .docker.env \
+		--env-file .devdata.env \
 		-p 9800:9800 \
 		hypothesis/test-pyramid-app:$(DOCKER_TAG)
 

@@ -31,6 +31,7 @@ Then to set up your development environment:
 git clone https://github.com/hypothesis/test-pyramid-app.git
 cd test-pyramid-app
 make services
+make devdata
 make help
 ```
 

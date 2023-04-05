@@ -3,3 +3,6 @@ gunicorn
 newrelic
 sqlalchemy
 psycopg2
+celery
+pyramid-googleauth
+pyramid-jinja2
