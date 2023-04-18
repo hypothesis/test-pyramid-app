@@ -9,7 +9,7 @@ app = Celery("hello", broker=environ["BROKER_URL"])
 logger = get_task_logger(__name__)
 
 
-@app.task
+@app.task(acks_late=True)
 def work(seconds):  # pragma: no cover
     for second in reversed(range(seconds)):
         logger.info("Working %i", second + 1)
