@@ -3,19 +3,8 @@ from time import sleep
 
 from celery import Celery
 from celery.utils.log import get_task_logger
-from kombu import Exchange, Queue
 
 app = Celery("hello", broker=environ["BROKER_URL"])
-app.conf.update(
-    task_queues=[
-        Queue(
-            "celery",
-            durable=True,
-            routing_key="celery",
-            exchange=Exchange("celery", durable=True),
-        )
-    ]
-)
 
 logger = get_task_logger(__name__)
 
