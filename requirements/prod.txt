@@ -93,7 +93,7 @@ six==1.16.0
     # via
     #   click-repl
     #   google-auth
-sqlalchemy==2.0.6
+sqlalchemy==2.0.12
     # via -r requirements/prod.in
 translationstring==1.4
     # via pyramid
