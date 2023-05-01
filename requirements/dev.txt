@@ -196,7 +196,7 @@ six==1.16.0
     #   click-repl
     #   google-auth
     #   python-dateutil
-sqlalchemy==2.0.6
+sqlalchemy==2.0.12
     # via -r requirements/prod.txt
 stack-data==0.3.0
     # via ipython

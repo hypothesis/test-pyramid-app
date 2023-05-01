@@ -186,7 +186,7 @@ six==1.16.0
     #   python-dateutil
 soupsieve==2.3.2.post1
     # via beautifulsoup4
-sqlalchemy==2.0.6
+sqlalchemy==2.0.12
     # via -r requirements/prod.txt
 tomli==2.0.1
     # via
