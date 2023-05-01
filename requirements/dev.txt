@@ -101,7 +101,7 @@ markupsafe==2.1.2
     #   pyramid-jinja2
 matplotlib-inline==0.1.3
     # via ipython
-newrelic==8.7.0
+newrelic==8.8.0
     # via -r requirements/prod.txt
 oauthlib==3.2.2
     # via
