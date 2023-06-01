@@ -8,8 +8,6 @@ amqp==5.1.1
     # via
     #   -r requirements/prod.txt
     #   kombu
-attrs==21.4.0
-    # via pytest
 billiard==3.6.4.0
     # via
     #   -r requirements/prod.txt
@@ -160,7 +158,7 @@ pyramid-googleauth==1.0.5
     # via -r requirements/prod.txt
 pyramid-jinja2==2.10
     # via -r requirements/prod.txt
-pytest==7.2.2
+pytest==7.3.1
     # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
