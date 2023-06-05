@@ -1,7 +1,7 @@
 #!/bin/bash
 docker run \
     --add-host host.docker.internal:host-gateway \
-    --net test_pyramid_app_default \
+    --net test-pyramid-app_default \
     --env-file .docker.env \
     --env-file .devdata.env \
     -p 9800:9800 \

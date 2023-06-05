@@ -18,7 +18,7 @@
     "__github_url": "https://github.com/hypothesis/test-pyramid-app",
     "docker": "yes",
     "__docker_namespace": "hypothesis",
-    "__docker_network": "test_pyramid_app_default",
+    "__docker_network": "test-pyramid-app_default",
     "postgres": "yes",
     "frontend": "no",
     "__postgres_port": "5438",
