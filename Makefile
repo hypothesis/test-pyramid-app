@@ -10,6 +10,13 @@ services: args?=up -d
 services: python
 	@docker compose $(args)
 
+.PHONY: db
+$(call help,make db,initialize the DB and upgrade it to the latest migration)
+db: args?=upgrade head
+db: python
+	@tox -qe dev --run-command 'python bin/make_db'
+	@tox -qe dev  --run-command 'alembic -c conf/alembic.ini $(args)'
+
 .PHONY: devdata
 $(call help,make devdata,load development data and environment variables)
 devdata: python
@@ -21,7 +28,7 @@ dev: python
 	@pyenv exec tox -qe dev
 
 .PHONY: web
-$(call help,make web,run just a web worker)
+$(call help,make web,run just a single web worker process)
 web: python
 	@pyenv exec tox -qe dev --run-command 'gunicorn --bind :9800 --workers 1 --reload --timeout 0 --paste conf/development.ini'
 
@@ -84,7 +91,7 @@ sure:
 # requirements/%.txt filename, for example requirements/foo.txt -> foo.
 requirements/%.txt: requirements/%.in
 	@touch -a $(subst prod.txt,dev.txt,$@)
-	@tox -qe $(subst prod,dev,$(basename $(notdir $@))) --run-command 'pip --quiet --disable-pip-version-check install pip-tools'
+	@tox -qe $(subst prod,dev,$(basename $(notdir $@))) --run-command 'pip --quiet --disable-pip-version-check install pip-tools pip-sync-faster'
 	@tox -qe $(subst prod,dev,$(basename $(notdir $@))) --run-command 'pip-compile --allow-unsafe --quiet $(args) $<'
 
 # Inform make of the dependencies between our requirements files so that it
@@ -135,7 +142,7 @@ docker-run:
 .PHONY: clean
 $(call help,make clean,"delete temporary files etc")
 clean:
-	@rm -rf build dist .tox
+	@rm -rf build dist .tox .coverage coverage .eslintcache node_modules supervisord.log supervisord.pid yarn-error.log
 	@find . -path '*/__pycache__*' -delete
 	@find . -path '*.egg-info*' -delete
 

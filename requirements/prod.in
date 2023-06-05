@@ -3,6 +3,7 @@ gunicorn
 newrelic
 sqlalchemy
 psycopg2
+alembic
 celery
 pyramid-googleauth
 pyramid-jinja2
