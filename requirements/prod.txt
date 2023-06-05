@@ -4,6 +4,8 @@
 #
 #    pip-compile --allow-unsafe requirements/prod.in
 #
+alembic==1.11.1
+    # via -r requirements/prod.in
 amqp==5.1.1
     # via kombu
 billiard==3.6.4.0
@@ -44,9 +46,12 @@ jinja2==3.1.2
     # via pyramid-jinja2
 kombu==5.2.4
     # via celery
+mako==1.2.4
+    # via alembic
 markupsafe==2.1.2
     # via
     #   jinja2
+    #   mako
     #   pyramid-jinja2
 newrelic==8.8.0
     # via -r requirements/prod.in
@@ -94,11 +99,15 @@ six==1.16.0
     #   click-repl
     #   google-auth
 sqlalchemy==2.0.15
-    # via -r requirements/prod.in
+    # via
+    #   -r requirements/prod.in
+    #   alembic
 translationstring==1.4
     # via pyramid
 typing-extensions==4.4.0
-    # via sqlalchemy
+    # via
+    #   alembic
+    #   sqlalchemy
 urllib3==1.26.15
     # via requests
 venusian==3.0.0
