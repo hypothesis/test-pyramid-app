@@ -22,7 +22,7 @@ app.conf.update(
     # don't trigger Celery retries whereas soft ones do. Soft time limits also
     # give the task a chance to catch SoftTimeLimitExceeded and do some cleanup
     # before exiting.
-    task_soft_time_limit=120,
+    task_soft_time_limit=3600,
     # Tell Celery to force-terminate any task run (by terminating the worker
     # process and replacing it with a new one) if it takes linger than
     # task_time_limit seconds.
@@ -34,7 +34,7 @@ app.conf.update(
     #
     # This can be overridden on a per-task basis by adding time_limit=n to the
     # task's @app.task() arguments.
-    task_time_limit=240,
+    task_time_limit=7200,
 )
 
 logger = get_task_logger(__name__)
