@@ -40,7 +40,7 @@ app.conf.update(
 logger = get_task_logger(__name__)
 
 
-@app.task(acks_late=True)
+@app.task(acks_late=True, autoretry_for=(Exception,), max_retries=2)
 def work(seconds):  # pragma: no cover
     for second in reversed(range(seconds)):
         logger.info("Working %i", second + 1)
