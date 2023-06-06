@@ -35,6 +35,8 @@ make devdata
 make help
 ```
 
+To run Pyramid App Cookiecutter Test locally run `make dev` and visit http://localhost:9800.
+
 ## Changing the Project's Python Version
 
 To change what version of Python the project uses:
