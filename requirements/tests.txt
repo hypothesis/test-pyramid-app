@@ -10,7 +10,7 @@ amqp==5.1.1
     # via
     #   -r requirements/prod.txt
     #   kombu
-billiard==3.6.4.0
+billiard==4.1.0
     # via
     #   -r requirements/prod.txt
     #   celery
@@ -20,7 +20,7 @@ cachetools==5.3.0
     # via
     #   -r requirements/prod.txt
     #   google-auth
-celery==5.2.7
+celery==5.3.1
     # via -r requirements/prod.txt
 certifi==2022.12.7
     # via
@@ -94,7 +94,7 @@ jinja2==3.1.2
     # via
     #   -r requirements/prod.txt
     #   pyramid-jinja2
-kombu==5.2.4
+kombu==5.3.1
     # via
     #   -r requirements/prod.txt
     #   celery
@@ -175,12 +175,10 @@ pytest==7.3.1
     # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
-    #   faker
-    #   freezegun
-pytz==2023.3
-    # via
     #   -r requirements/prod.txt
     #   celery
+    #   faker
+    #   freezegun
 requests==2.31.0
     # via
     #   -r requirements/prod.txt
@@ -218,6 +216,10 @@ typing-extensions==4.4.0
     #   -r requirements/prod.txt
     #   alembic
     #   sqlalchemy
+tzdata==2023.3
+    # via
+    #   -r requirements/prod.txt
+    #   celery
 urllib3==1.26.15
     # via
     #   -r requirements/prod.txt
