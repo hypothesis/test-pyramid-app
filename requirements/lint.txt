@@ -310,7 +310,7 @@ soupsieve==2.3.2.post1
     # via
     #   -r requirements/functests.txt
     #   beautifulsoup4
-sqlalchemy==2.0.15
+sqlalchemy==2.0.17
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
