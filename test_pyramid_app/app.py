@@ -46,6 +46,15 @@ def create_app(_=None, **settings):
         config.add_route("status", "/_status")
         config.add_route("admin", "/admin")
 
+        config.registry.settings["database_url"] = environ["DATABASE_URL"]
+
+        config.registry.settings["tm.annotate_user"] = False
+        config.registry.settings["tm.manager_hook"] = "pyramid_tm.explicit_manager"
+        config.include("pyramid_tm")
+
+        config.include("test_pyramid_app.models")
+        config.include("test_pyramid_app.db")
+
         config.set_session_factory(
             SignedCookieSessionFactory(environ["SESSION_COOKIE_SECRET"])
         )

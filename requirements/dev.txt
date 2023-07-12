@@ -116,8 +116,11 @@ oauthlib==3.2.2
     # via
     #   -r requirements/prod.txt
     #   requests-oauthlib
-packaging==21.3
-    # via build
+packaging==23.1
+    # via
+    #   -r requirements/prod.txt
+    #   build
+    #   zope-sqlalchemy
 parso==0.8.3
     # via jedi
 pastedeploy==2.1.1
@@ -171,19 +174,20 @@ pyjwt==2.6.0
     # via
     #   -r requirements/prod.txt
     #   pyramid-googleauth
-pyparsing==3.0.9
-    # via packaging
 pyramid==2.0.1
     # via
     #   -r requirements/prod.txt
     #   pyramid-googleauth
     #   pyramid-ipython
     #   pyramid-jinja2
+    #   pyramid-tm
 pyramid-googleauth==1.0.5
     # via -r requirements/prod.txt
 pyramid-ipython==0.2
     # via -r requirements/dev.in
 pyramid-jinja2==2.10
+    # via -r requirements/prod.txt
+pyramid-tm==2.5
     # via -r requirements/prod.txt
 python-dateutil==2.8.2
     # via
@@ -212,6 +216,7 @@ sqlalchemy==2.0.17
     # via
     #   -r requirements/prod.txt
     #   alembic
+    #   zope-sqlalchemy
 stack-data==0.3.0
     # via ipython
 supervisor==4.2.5
@@ -224,6 +229,11 @@ traitlets==5.3.0
     # via
     #   ipython
     #   matplotlib-inline
+transaction==3.1.0
+    # via
+    #   -r requirements/prod.txt
+    #   pyramid-tm
+    #   zope-sqlalchemy
 translationstring==1.4
     # via
     #   -r requirements/prod.txt
@@ -272,6 +282,10 @@ zope-interface==5.4.0
     # via
     #   -r requirements/prod.txt
     #   pyramid
+    #   transaction
+    #   zope-sqlalchemy
+zope-sqlalchemy==3.0
+    # via -r requirements/prod.txt
 
 # The following packages are considered to be unsafe in a requirements file:
 pip==22.2.1
@@ -287,3 +301,4 @@ setuptools==65.5.1
     #   supervisor
     #   zope-deprecation
     #   zope-interface
+    #   zope-sqlalchemy
