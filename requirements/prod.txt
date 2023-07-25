@@ -5,7 +5,7 @@
 #    pip-compile --allow-unsafe requirements/prod.in
 #
 alembic==1.11.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 amqp==5.1.1
     # via kombu
 billiard==4.1.0
@@ -13,8 +13,8 @@ billiard==4.1.0
 cachetools==5.3.0
     # via google-auth
 celery==5.3.1
-    # via -r requirements/prod.in
-certifi==2022.12.7
+    # via -r prod.in
+certifi==2023.7.22
     # via requests
 charset-normalizer==3.1.0
     # via requests
@@ -37,7 +37,7 @@ google-auth-oauthlib==1.0.0
 greenlet==2.0.1
     # via sqlalchemy
 gunicorn==20.1.0
-    # via -r requirements/prod.in
+    # via -r prod.in
 hupper==1.10.3
     # via pyramid
 idna==3.4
@@ -54,7 +54,7 @@ markupsafe==2.1.2
     #   mako
     #   pyramid-jinja2
 newrelic==8.8.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 oauthlib==3.2.2
     # via requests-oauthlib
 pastedeploy==2.1.1
@@ -68,7 +68,7 @@ plaster-pastedeploy==0.7
 prompt-toolkit==3.0.38
     # via click-repl
 psycopg2==2.9.6
-    # via -r requirements/prod.in
+    # via -r prod.in
 pyasn1==0.4.8
     # via
     #   pyasn1-modules
@@ -79,13 +79,13 @@ pyjwt==2.6.0
     # via pyramid-googleauth
 pyramid==2.0.1
     # via
-    #   -r requirements/prod.in
+    #   -r prod.in
     #   pyramid-googleauth
     #   pyramid-jinja2
 pyramid-googleauth==1.0.5
-    # via -r requirements/prod.in
+    # via -r prod.in
 pyramid-jinja2==2.10
-    # via -r requirements/prod.in
+    # via -r prod.in
 python-dateutil==2.8.2
     # via celery
 requests==2.31.0
@@ -101,7 +101,7 @@ six==1.16.0
     #   python-dateutil
 sqlalchemy==2.0.17
     # via
-    #   -r requirements/prod.in
+    #   -r prod.in
     #   alembic
 translationstring==1.4
     # via pyramid
