@@ -165,7 +165,7 @@ pyasn1-modules==0.2.8
     # via
     #   -r prod.txt
     #   google-auth
-pygments==2.12.0
+pygments==2.15.0
     # via ipython
 pyjwt==2.6.0
     # via
