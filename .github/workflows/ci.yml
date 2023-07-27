@@ -68,6 +68,8 @@ jobs:
         image: postgres:11.5-alpine
         ports:
         - 5438:5432
+        env:
+          POSTGRES_HOST_AUTH_METHOD: trust
       elasticsearch:
         image: hypothesis/elasticsearch:latest
         ports:
@@ -125,6 +127,8 @@ jobs:
         image: postgres:11.5-alpine
         ports:
         - 5438:5432
+        env:
+          POSTGRES_HOST_AUTH_METHOD: trust
       elasticsearch:
         image: hypothesis/elasticsearch:latest
         ports:
