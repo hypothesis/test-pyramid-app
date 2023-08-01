@@ -130,7 +130,7 @@ pep517==0.13.0
     # via build
 pip-sync-faster==0.0.3
     # via -r requirements/tests.in
-pip-tools==6.13.0
+pip-tools==7.1.0
     # via
     #   -r requirements/tests.in
     #   pip-sync-faster
@@ -214,6 +214,7 @@ tomli==2.0.1
     #   build
     #   coverage
     #   pep517
+    #   pip-tools
     #   pytest
 translationstring==1.4
     # via
