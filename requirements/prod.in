@@ -4,6 +4,8 @@ newrelic
 sqlalchemy
 psycopg2
 alembic
+pyramid-tm
+zope.sqlalchemy
 celery
 pyramid-googleauth
 pyramid-jinja2
