@@ -5,15 +5,15 @@
 #    pip-compile --allow-unsafe --config=pyproject.toml requirements/prod.in
 #
 alembic==1.11.1
-    # via -r prod.in
+    # via -r requirements/prod.in
 amqp==5.1.1
     # via kombu
 billiard==4.1.0
     # via celery
 cachetools==5.3.0
     # via google-auth
-celery==5.3.1
-    # via -r prod.in
+celery==5.3.3
+    # via -r requirements/prod.in
 certifi==2023.7.22
     # via requests
 charset-normalizer==3.1.0
@@ -37,14 +37,14 @@ google-auth-oauthlib==1.0.0
 greenlet==2.0.1
     # via sqlalchemy
 gunicorn==20.1.0
-    # via -r prod.in
+    # via -r requirements/prod.in
 hupper==1.10.3
     # via pyramid
 idna==3.4
     # via requests
 jinja2==3.1.2
     # via pyramid-jinja2
-kombu==5.3.1
+kombu==5.3.2
     # via celery
 mako==1.2.4
     # via alembic
@@ -54,7 +54,7 @@ markupsafe==2.1.2
     #   mako
     #   pyramid-jinja2
 newrelic==8.9.0
-    # via -r prod.in
+    # via -r requirements/prod.in
 oauthlib==3.2.2
     # via requests-oauthlib
 packaging==23.1
@@ -70,7 +70,7 @@ plaster-pastedeploy==0.7
 prompt-toolkit==3.0.38
     # via click-repl
 psycopg2==2.9.6
-    # via -r prod.in
+    # via -r requirements/prod.in
 pyasn1==0.4.8
     # via
     #   pyasn1-modules
@@ -81,16 +81,16 @@ pyjwt==2.6.0
     # via pyramid-googleauth
 pyramid==2.0.2
     # via
-    #   -r prod.in
+    #   -r requirements/prod.in
     #   pyramid-googleauth
     #   pyramid-jinja2
     #   pyramid-tm
 pyramid-googleauth==1.0.5
-    # via -r prod.in
+    # via -r requirements/prod.in
 pyramid-jinja2==2.10
-    # via -r prod.in
+    # via -r requirements/prod.in
 pyramid-tm==2.5
-    # via -r prod.in
+    # via -r requirements/prod.in
 python-dateutil==2.8.2
     # via celery
 requests==2.31.0
@@ -106,7 +106,7 @@ six==1.16.0
     #   python-dateutil
 sqlalchemy==2.0.17
     # via
-    #   -r prod.in
+    #   -r requirements/prod.in
     #   alembic
     #   zope-sqlalchemy
 transaction==3.1.0
@@ -144,7 +144,7 @@ zope-interface==5.4.0
     #   transaction
     #   zope-sqlalchemy
 zope-sqlalchemy==3.0
-    # via -r prod.in
+    # via -r requirements/prod.in
 
 # The following packages are considered to be unsafe in a requirements file:
 setuptools==65.5.1
