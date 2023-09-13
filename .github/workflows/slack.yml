@@ -1,3 +1,4 @@
+name: Slack
 on:
   workflow_run:
     workflows: [CI]
@@ -12,6 +13,6 @@ jobs:
         uses: slackapi/slack-github-action@v1.24.0
         with:
           channel-id: 'testing-github-actions-slack-bot'
-          slack-message: "ci.yml failed\n\n*Commit:* ${{ github.sha }}"
+          slack-message: "`ci.yml` failed on `main`\n\n*Commit:* ${{ github.event.sha }}"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
