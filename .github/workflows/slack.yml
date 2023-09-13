@@ -1,0 +1,17 @@
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+jobs:
+  on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - name: Post to Slack
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: 'testing-github-actions-slack-bot'
+          slack-message: "ci.yml failed\n\n*Commit:* ${{ github.sha }}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
