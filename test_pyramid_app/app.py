@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from os import environ
 from typing import List
 
-from pyramid.config import Configurator
 import pyramid_googleauth
+from pyramid.config import Configurator
 from pyramid.httpexceptions import HTTPFound
 from pyramid.security import Allowed, Denied
 from pyramid.session import SignedCookieSessionFactory
