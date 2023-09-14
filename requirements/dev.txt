@@ -24,7 +24,7 @@ cachetools==5.3.0
     # via
     #   -r requirements/prod.txt
     #   google-auth
-celery==5.3.3
+celery==5.3.4
     # via -r requirements/prod.txt
 certifi==2023.7.22
     # via
