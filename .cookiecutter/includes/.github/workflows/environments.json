@@ -6,13 +6,6 @@
     "elasticbeanstalk_application": "test-pyramid-app",
     "elasticbeanstalk_environment": "qa"
   },
-  "staging": {
-    "github_environment_name": "Staging",
-    "github_environment_url": "https://test-pyramid-app.staging.hypothes.is",
-    "aws_region": "us-west-1",
-    "elasticbeanstalk_application": "test-pyramid-app",
-    "elasticbeanstalk_environment": "staging"
-  },
   "production": {
     "needs": ["qa"],
     "github_environment_name": "Production",
