@@ -178,7 +178,7 @@ pyramid-jinja2==2.10
     # via -r requirements/prod.txt
 pyramid-tm==2.5
     # via -r requirements/prod.txt
-pytest==7.4.0
+pytest==7.4.2
     # via
     #   -r requirements/tests.in
     #   pytest-factoryboy
