@@ -69,7 +69,7 @@ plaster-pastedeploy==0.7
     # via pyramid
 prompt-toolkit==3.0.38
     # via click-repl
-psycopg2==2.9.6
+psycopg2==2.9.8
     # via -r requirements/prod.in
 pyasn1==0.4.8
     # via
