@@ -121,7 +121,7 @@ typing-extensions==4.4.0
     #   sqlalchemy
 tzdata==2023.3
     # via celery
-urllib3==1.26.17
+urllib3==1.26.18
     # via requests
 venusian==3.0.0
     # via pyramid
