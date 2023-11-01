@@ -104,7 +104,7 @@ six==1.16.0
     #   click-repl
     #   google-auth
     #   python-dateutil
-sqlalchemy==2.0.17
+sqlalchemy==2.0.22
     # via
     #   -r requirements/prod.in
     #   alembic
