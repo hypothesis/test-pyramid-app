@@ -69,6 +69,11 @@ jobs:
         - 5438:5432
         env:
           POSTGRES_HOST_AUTH_METHOD: trust
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
       elasticsearch:
         image: hypothesis/elasticsearch:latest
         ports:
@@ -130,6 +135,11 @@ jobs:
         - 5438:5432
         env:
           POSTGRES_HOST_AUTH_METHOD: trust
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
       elasticsearch:
         image: hypothesis/elasticsearch:latest
         ports:
