@@ -8,11 +8,11 @@ alembic==1.12.0
     # via -r requirements/prod.in
 amqp==5.1.1
     # via kombu
-billiard==4.1.0
+billiard==4.2.0
     # via celery
 cachetools==5.3.0
     # via google-auth
-celery==5.3.4
+celery==5.3.6
     # via -r requirements/prod.in
 certifi==2023.7.22
     # via requests
@@ -44,7 +44,7 @@ idna==3.4
     # via requests
 jinja2==3.1.2
     # via pyramid-jinja2
-kombu==5.3.2
+kombu==5.3.4
     # via celery
 mako==1.2.4
     # via alembic
@@ -125,7 +125,7 @@ urllib3==1.26.18
     # via requests
 venusian==3.0.0
     # via pyramid
-vine==5.0.0
+vine==5.1.0
     # via
     #   amqp
     #   celery
