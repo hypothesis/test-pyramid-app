@@ -234,7 +234,7 @@ prompt-toolkit==3.0.38
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   click-repl
-psycopg2==2.9.8
+psycopg2==2.9.9
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
