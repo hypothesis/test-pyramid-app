@@ -62,7 +62,7 @@ factory-boy==3.3.0
     #   pytest-factoryboy
 faker==13.15.0
     # via factory-boy
-freezegun==1.2.2
+freezegun==1.4.0
     # via -r requirements/tests.in
 google-auth==2.17.2
     # via
