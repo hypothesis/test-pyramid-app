@@ -36,7 +36,7 @@ google-auth-oauthlib==1.0.0
     # via pyramid-googleauth
 greenlet==2.0.1
     # via sqlalchemy
-gunicorn==20.1.0
+gunicorn==21.2.0
     # via -r requirements/prod.in
 hupper==1.10.3
     # via pyramid
@@ -58,7 +58,9 @@ newrelic==9.2.0
 oauthlib==3.2.2
     # via requests-oauthlib
 packaging==23.1
-    # via zope-sqlalchemy
+    # via
+    #   gunicorn
+    #   zope-sqlalchemy
 pastedeploy==2.1.1
     # via plaster-pastedeploy
 plaster==1.0
@@ -149,7 +151,6 @@ zope-sqlalchemy==3.0
 # The following packages are considered to be unsafe in a requirements file:
 setuptools==65.5.1
     # via
-    #   gunicorn
     #   pastedeploy
     #   plaster
     #   pyramid
