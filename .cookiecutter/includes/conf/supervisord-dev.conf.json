@@ -1,5 +1,9 @@
 {
   "programs": {
+    "init_db": {
+      "command": "python3 -m test_pyramid_app.scripts.init_db --create --stamp",
+      "startsecs": "0"
+    },
     "web": {
       "command": "gunicorn --bind :9800 --workers 1 --reload --timeout 0 --paste conf/development.ini"
     },

@@ -43,6 +43,7 @@ parallel = true
 source = ["test_pyramid_app", "tests/unit"]
 omit = [
     "*/test_pyramid_app/__main__.py",
+    "*/test_pyramid_app/scripts/init_db.py",
 ]
 
 [tool.coverage.paths]
