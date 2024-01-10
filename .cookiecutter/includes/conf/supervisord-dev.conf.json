@@ -1,10 +1,10 @@
 {
   "programs": {
     "web": {
-      "command": "gunicorn --paste conf/development.ini --config conf/gunicorn-dev.conf.py"
+      "command": "newrelic-admin run-program gunicorn --paste conf/development.ini --config conf/gunicorn-dev.conf.py"
     },
     "worker": {
-      "command": "celery -A test_pyramid_app.celery:app worker --loglevel=INFO"
+      "command": "newreli-admin run-program celery -A test_pyramid_app.celery:app worker --loglevel=INFO"
     }
   }
 }
