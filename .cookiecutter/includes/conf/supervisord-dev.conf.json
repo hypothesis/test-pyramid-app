@@ -4,7 +4,7 @@
       "command": "newrelic-admin run-program gunicorn --paste conf/development.ini --config conf/gunicorn-dev.conf.py"
     },
     "worker": {
-      "command": "newreli-admin run-program celery -A test_pyramid_app.celery:app worker --loglevel=INFO"
+      "command": "newrelic-admin run-program celery -A test_pyramid_app.celery:app worker --loglevel=INFO"
     }
   }
 }
