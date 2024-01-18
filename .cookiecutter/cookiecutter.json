@@ -1,7 +1,7 @@
 {
   "template": "https://github.com/hypothesis/cookiecutters",
   "directory": "pyramid-app",
-  "ignore": [],
+  "ignore": ["test_pyramid_app/templates/.gitkeep"],
   "extra_context": {
     "name": "Pyramid App Cookiecutter Test",
     "package_name": "test_pyramid_app",
