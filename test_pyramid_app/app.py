@@ -8,6 +8,7 @@ from pyramid.httpexceptions import HTTPFound
 from pyramid.security import Allowed, Denied
 from pyramid.session import SignedCookieSessionFactory
 from pyramid.view import forbidden_view_config, view_config, view_defaults
+from sentry_sdk import capture_message
 
 from test_pyramid_app.celery import work
 
@@ -53,6 +54,7 @@ def create_app(_=None, **settings):
         config.include("pyramid_googleauth")
 
         config.include("pyramid_jinja2")
+        config.include("h_pyramid_sentry")
 
         config.scan()
 
@@ -65,7 +67,10 @@ def index(_request):
 
 
 @view_config(route_name="status", renderer="json", http_cache=0)
-def status(_request):
+def status(request):
+    if "sentry" in request.params:
+        capture_message("Test message from test-pyramid-app's status view")
+
     return {"status": "okay"}
 
 

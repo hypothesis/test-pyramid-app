@@ -9,3 +9,4 @@ h-matchers
 h-testkit
 httpretty
 freezegun
+pytest-mock

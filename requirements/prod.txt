@@ -15,7 +15,9 @@ cachetools==5.3.0
 celery==5.3.6
     # via -r requirements/prod.in
 certifi==2023.7.22
-    # via requests
+    # via
+    #   requests
+    #   sentry-sdk
 charset-normalizer==3.1.0
     # via requests
 click==8.1.3
@@ -37,6 +39,8 @@ google-auth-oauthlib==1.0.0
 greenlet==2.0.1
     # via sqlalchemy
 gunicorn==21.2.0
+    # via -r requirements/prod.in
+h-pyramid-sentry==1.2.4
     # via -r requirements/prod.in
 hupper==1.10.3
     # via pyramid
@@ -84,6 +88,7 @@ pyjwt==2.6.0
 pyramid==2.0.2
     # via
     #   -r requirements/prod.in
+    #   h-pyramid-sentry
     #   pyramid-googleauth
     #   pyramid-jinja2
     #   pyramid-tm
@@ -101,6 +106,10 @@ requests-oauthlib==1.3.1
     # via google-auth-oauthlib
 rsa==4.9
     # via google-auth
+sentry-sdk==1.40.0
+    # via
+    #   -r requirements/prod.in
+    #   h-pyramid-sentry
 six==1.16.0
     # via
     #   click-repl
@@ -124,7 +133,9 @@ typing-extensions==4.4.0
 tzdata==2023.3
     # via celery
 urllib3==1.26.18
-    # via requests
+    # via
+    #   requests
+    #   sentry-sdk
 venusian==3.0.0
     # via pyramid
 vine==5.1.0
