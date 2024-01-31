@@ -26,6 +26,7 @@ certifi==2023.7.22
     # via
     #   -r requirements/prod.txt
     #   requests
+    #   sentry-sdk
 charset-normalizer==3.1.0
     # via
     #   -r requirements/prod.txt
@@ -80,6 +81,8 @@ gunicorn==21.2.0
     # via -r requirements/prod.txt
 h-matchers==1.2.15
     # via -r requirements/tests.in
+h-pyramid-sentry==1.2.4
+    # via -r requirements/prod.txt
 h-testkit==1.0.1
     # via -r requirements/tests.in
 httpretty==1.1.4
@@ -174,6 +177,7 @@ pyjwt==2.6.0
 pyramid==2.0.2
     # via
     #   -r requirements/prod.txt
+    #   h-pyramid-sentry
     #   pyramid-googleauth
     #   pyramid-jinja2
     #   pyramid-tm
@@ -188,9 +192,12 @@ pytest==7.4.2
     #   -r requirements/tests.in
     #   pytest-cov
     #   pytest-factoryboy
+    #   pytest-mock
 pytest-cov==4.1.0
     # via -r requirements/tests.in
 pytest-factoryboy==2.5.1
+    # via -r requirements/tests.in
+pytest-mock==3.12.0
     # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
@@ -210,6 +217,10 @@ rsa==4.9
     # via
     #   -r requirements/prod.txt
     #   google-auth
+sentry-sdk==1.40.0
+    # via
+    #   -r requirements/prod.txt
+    #   h-pyramid-sentry
 six==1.16.0
     # via
     #   -r requirements/prod.txt
@@ -251,6 +262,7 @@ urllib3==1.26.18
     # via
     #   -r requirements/prod.txt
     #   requests
+    #   sentry-sdk
 venusian==3.0.0
     # via
     #   -r requirements/prod.txt

@@ -9,3 +9,5 @@ zope.sqlalchemy
 celery
 pyramid-googleauth
 pyramid-jinja2
+sentry-sdk
+h-pyramid-sentry
