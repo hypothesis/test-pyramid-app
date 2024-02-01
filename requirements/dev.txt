@@ -222,7 +222,7 @@ six==1.16.0
     #   click-repl
     #   google-auth
     #   python-dateutil
-sqlalchemy==2.0.23
+sqlalchemy==2.0.25
     # via
     #   -r requirements/prod.txt
     #   alembic
@@ -249,7 +249,7 @@ translationstring==1.4
     # via
     #   -r requirements/prod.txt
     #   pyramid
-typing-extensions==4.4.0
+typing-extensions==4.9.0
     # via
     #   -r requirements/prod.txt
     #   alembic
