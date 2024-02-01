@@ -234,7 +234,7 @@ plaster-pastedeploy==0.7
     #   pyramid
 platformdirs==2.5.2
     # via pylint
-pluggy==1.0.0
+pluggy==1.4.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -290,7 +290,7 @@ pyramid-tm==2.5
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
-pytest==7.4.2
+pytest==8.0.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
