@@ -18,7 +18,7 @@ billiard==4.2.0
     # via
     #   -r requirements/prod.txt
     #   celery
-build==0.8.0
+build==1.1.1
     # via pip-tools
 cachetools==5.3.0
     # via
@@ -131,15 +131,13 @@ pastedeploy==2.1.1
     # via
     #   -r requirements/prod.txt
     #   plaster-pastedeploy
-pep517==0.13.0
-    # via build
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
 pip-sync-faster==0.0.3
     # via -r requirements/dev.in
-pip-tools==7.3.0
+pip-tools==7.4.0
     # via
     #   -r requirements/dev.in
     #   pip-sync-faster
@@ -178,6 +176,10 @@ pyjwt==2.6.0
     # via
     #   -r requirements/prod.txt
     #   pyramid-googleauth
+pyproject-hooks==1.0.0
+    # via
+    #   build
+    #   pip-tools
 pyramid==2.0.2
     # via
     #   -r requirements/prod.txt
@@ -234,8 +236,8 @@ supervisor==4.2.5
 tomli==2.0.1
     # via
     #   build
-    #   pep517
     #   pip-tools
+    #   pyproject-hooks
 traitlets==5.3.0
     # via
     #   ipython

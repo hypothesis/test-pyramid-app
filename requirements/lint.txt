@@ -24,7 +24,7 @@ billiard==4.2.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   celery
-build==0.8.0
+build==1.1.1
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -205,17 +205,12 @@ pastedeploy==2.1.1
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   plaster-pastedeploy
-pep517==0.13.0
-    # via
-    #   -r requirements/functests.txt
-    #   -r requirements/tests.txt
-    #   build
 pip-sync-faster==0.0.3
     # via
     #   -r requirements/functests.txt
     #   -r requirements/lint.in
     #   -r requirements/tests.txt
-pip-tools==7.3.0
+pip-tools==7.4.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/lint.in
@@ -270,6 +265,12 @@ pyjwt==2.6.0
     #   pyramid-googleauth
 pylint==3.0.0
     # via -r requirements/lint.in
+pyproject-hooks==1.0.0
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
+    #   build
+    #   pip-tools
 pyramid==2.0.2
     # via
     #   -r requirements/functests.txt
@@ -359,9 +360,9 @@ tomli==2.0.1
     #   -r requirements/tests.txt
     #   build
     #   coverage
-    #   pep517
     #   pip-tools
     #   pylint
+    #   pyproject-hooks
     #   pytest
 tomlkit==0.11.1
     # via pylint
