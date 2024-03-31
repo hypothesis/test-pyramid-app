@@ -76,7 +76,6 @@ click-repl==0.2.0
 coverage[toml]==7.2.7
     # via
     #   -r requirements/tests.txt
-    #   coverage
     #   pytest-cov
 dill==0.3.5.1
     # via pylint
@@ -183,7 +182,7 @@ markupsafe==2.1.2
     #   pyramid-jinja2
 mccabe==0.7.0
     # via pylint
-newrelic==9.6.0
+newrelic==9.8.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt

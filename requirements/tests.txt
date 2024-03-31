@@ -52,9 +52,7 @@ click-repl==0.2.0
     #   -r requirements/prod.txt
     #   celery
 coverage[toml]==7.2.7
-    # via
-    #   coverage
-    #   pytest-cov
+    # via pytest-cov
 exceptiongroup==1.0.1
     # via pytest
 factory-boy==3.3.0
@@ -119,7 +117,7 @@ markupsafe==2.1.2
     #   jinja2
     #   mako
     #   pyramid-jinja2
-newrelic==9.6.0
+newrelic==9.8.0
     # via -r requirements/prod.txt
 oauthlib==3.2.2
     # via
