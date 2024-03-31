@@ -52,9 +52,7 @@ click-repl==0.2.0
     #   -r requirements/prod.txt
     #   celery
 coverage[toml]==7.2.7
-    # via
-    #   coverage
-    #   pytest-cov
+    # via pytest-cov
 exceptiongroup==1.0.1
     # via pytest
 factory-boy==3.3.0
@@ -131,6 +129,7 @@ packaging==23.1
     #   build
     #   gunicorn
     #   pytest
+    #   pytest-factoryboy
     #   zope-sqlalchemy
 pastedeploy==2.1.1
     # via
@@ -197,7 +196,7 @@ pytest==8.0.0
     #   pytest-mock
 pytest-cov==4.1.0
     # via -r requirements/tests.in
-pytest-factoryboy==2.5.1
+pytest-factoryboy==2.7.0
     # via -r requirements/tests.in
 pytest-mock==3.12.0
     # via -r requirements/tests.in
