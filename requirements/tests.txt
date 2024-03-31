@@ -129,6 +129,7 @@ packaging==23.1
     #   build
     #   gunicorn
     #   pytest
+    #   pytest-factoryboy
     #   zope-sqlalchemy
 pastedeploy==2.1.1
     # via
@@ -195,7 +196,7 @@ pytest==8.0.0
     #   pytest-mock
 pytest-cov==5.0.0
     # via -r requirements/tests.in
-pytest-factoryboy==2.5.1
+pytest-factoryboy==2.7.0
     # via -r requirements/tests.in
 pytest-mock==3.14.0
     # via -r requirements/tests.in
