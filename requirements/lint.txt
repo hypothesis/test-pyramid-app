@@ -303,7 +303,7 @@ pytest-factoryboy==2.5.1
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
-pytest-mock==3.12.0
+pytest-mock==3.14.0
     # via -r requirements/tests.txt
 python-dateutil==2.8.2
     # via
