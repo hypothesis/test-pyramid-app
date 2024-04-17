@@ -75,7 +75,7 @@ greenlet==2.0.1
     # via
     #   -r prod.txt
     #   sqlalchemy
-gunicorn==21.2.0
+gunicorn==22.0.0
     # via -r prod.txt
 h-pyramid-sentry==1.2.4
     # via -r prod.txt
