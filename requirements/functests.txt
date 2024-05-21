@@ -197,7 +197,7 @@ python-dateutil==2.8.2
     #   -r prod.txt
     #   celery
     #   faker
-requests==2.31.0
+requests==2.32.0
     # via
     #   -r prod.txt
     #   requests-oauthlib
