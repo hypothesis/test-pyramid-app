@@ -1,4 +1,4 @@
-FROM python:3.10.11-alpine3.16
+FROM python:3.11.9-alpine3.20
 
 RUN apk add --no-cache nginx supervisor
 
