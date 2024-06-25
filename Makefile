@@ -138,6 +138,11 @@ $(call help,make docker-run,"run the app's docker image")
 docker-run:
 	@bin/make_docker_run
 
+.PHONY: deploy
+$(call help,make deploy,"deploy the main branch from the GitHub repo")
+deploy:
+	@pyenv exec tox -qqe deploy
+
 .PHONY: clean
 $(call help,make clean,"delete temporary files etc")
 clean:

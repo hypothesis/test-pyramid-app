@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+
+gh workflow run --ref main deploy.yml > /dev/null
+GITHUB_TOKEN=$(gh auth token) watch_gha_runs --wait-for-start --only deploy 'https://github.com/hypothesis/test-pyramid-app' main
