@@ -200,7 +200,7 @@ pastedeploy==2.1.1
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   plaster-pastedeploy
-pip-sync-faster==0.0.3
+pip-sync-faster==0.0.4
     # via
     #   -r requirements/functests.txt
     #   -r requirements/lint.in
