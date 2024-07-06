@@ -5,7 +5,7 @@
 #    pip-compile --allow-unsafe requirements/prod.in
 #
 alembic==1.13.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 amqp==5.1.1
     # via kombu
 billiard==4.2.0
@@ -13,8 +13,8 @@ billiard==4.2.0
 cachetools==5.3.0
     # via google-auth
 celery==5.3.6
-    # via -r requirements/prod.in
-certifi==2023.7.22
+    # via -r prod.in
+certifi==2024.7.4
     # via
     #   requests
     #   sentry-sdk
@@ -39,9 +39,9 @@ google-auth-oauthlib==1.0.0
 greenlet==2.0.1
     # via sqlalchemy
 gunicorn==22.0.0
-    # via -r requirements/prod.in
+    # via -r prod.in
 h-pyramid-sentry==1.2.4
-    # via -r requirements/prod.in
+    # via -r prod.in
 hupper==1.10.3
     # via pyramid
 idna==3.7
@@ -58,7 +58,7 @@ markupsafe==2.1.2
     #   mako
     #   pyramid-jinja2
 newrelic==9.10.0
-    # via -r requirements/prod.in
+    # via -r prod.in
 oauthlib==3.2.2
     # via requests-oauthlib
 packaging==23.1
@@ -76,7 +76,7 @@ plaster-pastedeploy==0.7
 prompt-toolkit==3.0.38
     # via click-repl
 psycopg2==2.9.9
-    # via -r requirements/prod.in
+    # via -r prod.in
 pyasn1==0.4.8
     # via
     #   pyasn1-modules
@@ -87,17 +87,17 @@ pyjwt==2.6.0
     # via pyramid-googleauth
 pyramid==2.0.2
     # via
-    #   -r requirements/prod.in
+    #   -r prod.in
     #   h-pyramid-sentry
     #   pyramid-googleauth
     #   pyramid-jinja2
     #   pyramid-tm
 pyramid-googleauth==1.0.5
-    # via -r requirements/prod.in
+    # via -r prod.in
 pyramid-jinja2==2.10.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 pyramid-tm==2.5
-    # via -r requirements/prod.in
+    # via -r prod.in
 python-dateutil==2.8.2
     # via celery
 requests==2.32.0
@@ -108,7 +108,7 @@ rsa==4.9
     # via google-auth
 sentry-sdk==2.7.1
     # via
-    #   -r requirements/prod.in
+    #   -r prod.in
     #   h-pyramid-sentry
 six==1.16.0
     # via
@@ -117,7 +117,7 @@ six==1.16.0
     #   python-dateutil
 sqlalchemy==2.0.31
     # via
-    #   -r requirements/prod.in
+    #   -r prod.in
     #   alembic
     #   zope-sqlalchemy
 transaction==3.1.0
@@ -157,7 +157,7 @@ zope-interface==5.4.0
     #   transaction
     #   zope-sqlalchemy
 zope-sqlalchemy==3.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 
 # The following packages are considered to be unsafe in a requirements file:
 setuptools==65.5.1
