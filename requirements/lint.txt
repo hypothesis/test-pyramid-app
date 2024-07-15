@@ -443,7 +443,7 @@ pip==23.3
     #   -r functests.txt
     #   -r tests.txt
     #   pip-tools
-setuptools==65.5.1
+setuptools==70.0.0
     # via
     #   -r functests.txt
     #   -r tests.txt
