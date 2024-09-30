@@ -73,7 +73,7 @@ greenlet==2.0.1
     # via
     #   -r requirements/prod.txt
     #   sqlalchemy
-gunicorn==22.0.0
+gunicorn==23.0.0
     # via -r requirements/prod.txt
 h-matchers==1.2.16
     # via -r requirements/tests.in
