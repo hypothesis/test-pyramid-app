@@ -95,7 +95,7 @@ markupsafe==2.1.2
     #   jinja2
     #   mako
     #   pyramid-jinja2
-mypy==1.11.2
+mypy==1.13.0
     # via -r requirements/typecheck.in
 mypy-extensions==1.0.0
     # via mypy
