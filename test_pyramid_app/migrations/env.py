@@ -4,7 +4,7 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 
-from test_pyramid_app import models
+from test_pyramid_app import models  # noqa: F401
 from test_pyramid_app.db import Base
 
 # this is the Alembic Config object, which provides
