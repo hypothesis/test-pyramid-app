@@ -25,6 +25,7 @@
     "__postgres_version": "11.5-alpine",
     "__frontend_typechecking": "no",
     "__copyright_year": "2022",
-    "devdata": "yes"
+    "devdata": "yes",
+    "linter": "ruff"
   }
 }
