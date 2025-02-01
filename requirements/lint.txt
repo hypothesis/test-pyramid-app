@@ -97,6 +97,10 @@ google-auth-oauthlib==1.0.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pyramid-googleauth
+greenlet==3.1.1
+    # via
+    #   -r requirements/functests.txt
+    #   sqlalchemy
 gunicorn==23.0.0
     # via
     #   -r requirements/functests.txt
@@ -367,7 +371,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-waitress==3.0.1
+waitress==3.0.2
     # via
     #   -r requirements/functests.txt
     #   webtest
@@ -382,7 +386,7 @@ webob==1.8.8
     #   -r requirements/tests.txt
     #   pyramid
     #   webtest
-webtest==3.0.1
+webtest==3.0.3
     # via -r requirements/functests.txt
 wheel==0.38.1
     # via
