@@ -59,6 +59,10 @@ google-auth-oauthlib==1.0.0
     # via
     #   -r requirements/prod.txt
     #   pyramid-googleauth
+greenlet==3.1.1
+    # via
+    #   -r requirements/prod.txt
+    #   sqlalchemy
 gunicorn==23.0.0
     # via -r requirements/prod.txt
 h-pyramid-sentry==1.2.4
@@ -95,7 +99,7 @@ mypy==1.13.0
     # via -r requirements/typecheck.in
 mypy-extensions==1.0.0
     # via mypy
-newrelic==10.4.0
+newrelic==10.5.0
     # via -r requirements/prod.txt
 oauthlib==3.2.2
     # via
