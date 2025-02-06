@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from os import environ
-from typing import List
 
 import pyramid_googleauth
 from pyramid.config import Configurator
@@ -16,7 +15,7 @@ from test_pyramid_app.celery import work
 class GoogleSecurityPolicy(pyramid_googleauth.GoogleSecurityPolicy):  # pragma: no cover
     @dataclass
     class Identity:
-        permissions: List[str]
+        permissions: list[str]
 
     def identity(self, request):
         userid = self.authenticated_userid(request)
