@@ -188,7 +188,7 @@ pyramid==2.0.2
     #   pyramid-ipython
     #   pyramid-jinja2
     #   pyramid-tm
-pyramid-googleauth==1.0.5
+pyramid-googleauth==1.0.6
     # via -r requirements/prod.txt
 pyramid-ipython==0.2
     # via -r requirements/dev.in
