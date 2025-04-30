@@ -12,7 +12,7 @@ amqp==5.1.1
     #   kombu
 beautifulsoup4==4.11.1
     # via webtest
-billiard==4.2.0
+billiard==4.2.1
     # via
     #   -r requirements/prod.txt
     #   celery
@@ -22,7 +22,7 @@ cachetools==5.3.0
     # via
     #   -r requirements/prod.txt
     #   google-auth
-celery==5.4.0
+celery==5.5.2
     # via -r requirements/prod.txt
 certifi==2024.7.4
     # via
@@ -99,7 +99,7 @@ jinja2==3.1.6
     # via
     #   -r requirements/prod.txt
     #   pyramid-jinja2
-kombu==5.3.4
+kombu==5.5.3
     # via
     #   -r requirements/prod.txt
     #   celery
@@ -239,10 +239,10 @@ typing-extensions==4.13.0
     #   alembic
     #   pytest-factoryboy
     #   sqlalchemy
-tzdata==2023.3
+tzdata==2025.2
     # via
     #   -r requirements/prod.txt
-    #   celery
+    #   kombu
 urllib3==1.26.19
     # via
     #   -r requirements/prod.txt
