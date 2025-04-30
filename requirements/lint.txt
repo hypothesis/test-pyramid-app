@@ -17,7 +17,7 @@ beautifulsoup4==4.11.1
     # via
     #   -r requirements/functests.txt
     #   webtest
-billiard==4.2.0
+billiard==4.2.1
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -32,7 +32,7 @@ cachetools==5.3.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   google-auth
-celery==5.4.0
+celery==5.5.2
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -152,7 +152,7 @@ jinja2==3.1.6
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pyramid-jinja2
-kombu==5.3.4
+kombu==5.5.3
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -349,11 +349,11 @@ typing-extensions==4.13.0
     #   alembic
     #   pytest-factoryboy
     #   sqlalchemy
-tzdata==2023.3
+tzdata==2025.2
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
-    #   celery
+    #   kombu
 urllib3==1.26.19
     # via
     #   -r requirements/functests.txt
