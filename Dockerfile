@@ -1,6 +1,6 @@
 FROM python:3.11.12-alpine3.20
 
-RUN apk add --no-cache nginx supervisor
+RUN apk add --no-cache nginx supervisor git
 
 RUN addgroup -S hypothesis && adduser -S -G hypothesis -h /var/lib/hypothesis hypothesis
 WORKDIR /var/lib/hypothesis
