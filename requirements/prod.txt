@@ -132,7 +132,7 @@ typing-extensions==4.13.0
     #   sqlalchemy
 tzdata==2025.2
     # via kombu
-urllib3==1.26.19
+urllib3==2.5.0
     # via
     #   requests
     #   sentry-sdk
