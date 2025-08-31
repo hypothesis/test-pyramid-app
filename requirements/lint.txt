@@ -32,7 +32,7 @@ cachetools==5.3.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   google-auth
-celery==5.5.2
+celery==5.5.3
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
