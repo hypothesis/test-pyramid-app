@@ -149,7 +149,9 @@ plaster-pastedeploy==0.7
     #   -r requirements/prod.txt
     #   pyramid
 pluggy==1.5.0
-    # via pytest
+    # via
+    #   pytest
+    #   pytest-cov
 prompt-toolkit==3.0.38
     # via
     #   -r requirements/prod.txt
@@ -192,7 +194,7 @@ pytest==8.3.5
     #   pytest-cov
     #   pytest-factoryboy
     #   pytest-mock
-pytest-cov==6.1.1
+pytest-cov==6.2.1
     # via -r requirements/tests.in
 pytest-factoryboy==2.7.0
     # via -r requirements/tests.in
