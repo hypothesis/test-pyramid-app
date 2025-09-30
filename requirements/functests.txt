@@ -269,7 +269,7 @@ webob==1.8.8
     #   -r requirements/prod.txt
     #   pyramid
     #   webtest
-webtest==3.0.4
+webtest==3.0.6
     # via -r requirements/functests.in
 wheel==0.38.1
     # via pip-tools
