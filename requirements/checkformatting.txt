@@ -13,24 +13,24 @@ importlib-metadata==6.6.0
 packaging==23.0
     # via build
 pip-sync-faster==0.0.5
-    # via -r requirements/checkformatting.in
+    # via -r checkformatting.in
 pip-tools==7.5.0
     # via
-    #   -r requirements/checkformatting.in
+    #   -r checkformatting.in
     #   pip-sync-faster
 pyproject-hooks==1.0.0
     # via
     #   build
     #   pip-tools
 ruff==0.13.0
-    # via -r requirements/checkformatting.in
+    # via -r checkformatting.in
 wheel==0.38.1
     # via pip-tools
 zipp==3.19.1
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==23.3
+pip==25.2
     # via pip-tools
 setuptools==78.1.1
     # via pip-tools
