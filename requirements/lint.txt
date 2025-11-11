@@ -195,13 +195,13 @@ pastedeploy==2.1.1
 pip-sync-faster==0.0.5
     # via
     #   -r functests.txt
-    #   -r lint.in
     #   -r tests.txt
+    #   -r requirements/lint.in
 pip-tools==7.5.0
     # via
     #   -r functests.txt
-    #   -r lint.in
     #   -r tests.txt
+    #   -r requirements/lint.in
     #   pip-sync-faster
 plaster==1.0
     # via
@@ -309,7 +309,7 @@ rsa==4.9
     #   -r tests.txt
     #   google-auth
 ruff==0.13.0
-    # via -r lint.in
+    # via -r requirements/lint.in
 sentry-sdk==2.32.0
     # via
     #   -r functests.txt
@@ -419,7 +419,7 @@ zope-sqlalchemy==3.1
     #   -r tests.txt
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==25.3
+pip==25.2
     # via
     #   -r functests.txt
     #   -r tests.txt

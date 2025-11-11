@@ -96,7 +96,7 @@ markupsafe==2.1.2
     #   mako
     #   pyramid-jinja2
 mypy==1.18.2
-    # via -r typecheck.in
+    # via -r requirements/typecheck.in
 mypy-extensions==1.0.0
     # via mypy
 newrelic==11.0.0
@@ -118,10 +118,10 @@ pastedeploy==2.1.1
 pathspec==0.12.1
     # via mypy
 pip-sync-faster==0.0.5
-    # via -r typecheck.in
+    # via -r requirements/typecheck.in
 pip-tools==7.5.0
     # via
-    #   -r typecheck.in
+    #   -r requirements/typecheck.in
     #   pip-sync-faster
 plaster==1.0
     # via
@@ -260,8 +260,10 @@ zope-sqlalchemy==3.1
     # via -r prod.txt
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==25.3
-    # via pip-tools
+pip==25.2
+    # via
+    #   -r prod.txt
+    #   pip-tools
 setuptools==78.1.1
     # via
     #   -r prod.txt
