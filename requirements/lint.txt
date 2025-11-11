@@ -169,7 +169,7 @@ markupsafe==2.1.2
     #   jinja2
     #   mako
     #   pyramid-jinja2
-newrelic==11.0.0
+newrelic==11.1.0
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
