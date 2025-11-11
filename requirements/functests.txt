@@ -55,7 +55,7 @@ click-repl==0.2.0
     #   celery
 factory-boy==3.3.3
     # via
-    #   -r functests.in
+    #   -r requirements/functests.in
     #   pytest-factoryboy
 faker==13.15.0
     # via factory-boy
@@ -74,13 +74,13 @@ greenlet==3.1.1
 gunicorn==23.0.0
     # via -r prod.txt
 h-matchers==1.2.17
-    # via -r functests.in
+    # via -r requirements/functests.in
 h-pyramid-sentry==1.2.4
     # via -r prod.txt
 h-testkit==1.0.1
-    # via -r functests.in
+    # via -r requirements/functests.in
 httpretty==1.1.4
-    # via -r functests.in
+    # via -r requirements/functests.in
 hupper==1.10.3
     # via
     #   -r prod.txt
@@ -132,10 +132,10 @@ pastedeploy==2.1.1
     #   -r prod.txt
     #   plaster-pastedeploy
 pip-sync-faster==0.0.5
-    # via -r functests.in
+    # via -r requirements/functests.in
 pip-tools==7.5.0
     # via
-    #   -r functests.in
+    #   -r requirements/functests.in
     #   pip-sync-faster
 plaster==1.0
     # via
@@ -186,10 +186,10 @@ pyramid-tm==2.6
     # via -r prod.txt
 pytest==8.3.5
     # via
-    #   -r functests.in
+    #   -r requirements/functests.in
     #   pytest-factoryboy
 pytest-factoryboy==2.7.0
-    # via -r functests.in
+    # via -r requirements/functests.in
 python-dateutil==2.8.2
     # via
     #   -r prod.txt
@@ -270,7 +270,7 @@ webob==1.8.8
     #   pyramid
     #   webtest
 webtest==3.0.6
-    # via -r functests.in
+    # via -r requirements/functests.in
 wheel==0.38.1
     # via pip-tools
 zipp==3.19.1
@@ -290,8 +290,10 @@ zope-sqlalchemy==3.1
     # via -r prod.txt
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==25.3
-    # via pip-tools
+pip==25.2
+    # via
+    #   -r prod.txt
+    #   pip-tools
 setuptools==78.1.1
     # via
     #   -r prod.txt

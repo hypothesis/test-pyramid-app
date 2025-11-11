@@ -55,12 +55,12 @@ coverage[toml]==7.6.10
     # via pytest-cov
 factory-boy==3.3.3
     # via
-    #   -r tests.in
+    #   -r requirements/tests.in
     #   pytest-factoryboy
 faker==13.15.0
     # via factory-boy
 freezegun==1.5.4
-    # via -r tests.in
+    # via -r requirements/tests.in
 google-auth==2.17.2
     # via
     #   -r prod.txt
@@ -76,13 +76,13 @@ greenlet==3.1.1
 gunicorn==23.0.0
     # via -r prod.txt
 h-matchers==1.2.17
-    # via -r tests.in
+    # via -r requirements/tests.in
 h-pyramid-sentry==1.2.4
     # via -r prod.txt
 h-testkit==1.0.1
-    # via -r tests.in
+    # via -r requirements/tests.in
 httpretty==1.1.4
-    # via -r tests.in
+    # via -r requirements/tests.in
 hupper==1.10.3
     # via
     #   -r prod.txt
@@ -134,10 +134,10 @@ pastedeploy==2.1.1
     #   -r prod.txt
     #   plaster-pastedeploy
 pip-sync-faster==0.0.5
-    # via -r tests.in
+    # via -r requirements/tests.in
 pip-tools==7.5.0
     # via
-    #   -r tests.in
+    #   -r requirements/tests.in
     #   pip-sync-faster
 plaster==1.0
     # via
@@ -190,16 +190,16 @@ pyramid-tm==2.6
     # via -r prod.txt
 pytest==8.3.5
     # via
-    #   -r tests.in
+    #   -r requirements/tests.in
     #   pytest-cov
     #   pytest-factoryboy
     #   pytest-mock
 pytest-cov==6.2.1
-    # via -r tests.in
+    # via -r requirements/tests.in
 pytest-factoryboy==2.7.0
-    # via -r tests.in
+    # via -r requirements/tests.in
 pytest-mock==3.15.1
-    # via -r tests.in
+    # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
     #   -r prod.txt
@@ -294,8 +294,10 @@ zope-sqlalchemy==3.1
     # via -r prod.txt
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==25.3
-    # via pip-tools
+pip==25.2
+    # via
+    #   -r prod.txt
+    #   pip-tools
 setuptools==78.1.1
     # via
     #   -r prod.txt
