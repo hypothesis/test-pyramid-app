@@ -172,7 +172,7 @@ pyasn1-modules==0.2.8
     #   google-auth
 pygments==2.15.0
     # via ipython
-pyjwt==2.6.0
+pyjwt==2.12.0
     # via
     #   -r prod.txt
     #   pyramid-googleauth
