@@ -12,7 +12,7 @@ billiard==4.2.1
     # via celery
 cachetools==5.3.0
     # via google-auth
-celery==5.5.3
+celery==5.6.3
     # via -r requirements/prod.in
 certifi==2024.7.4
     # via
@@ -48,7 +48,7 @@ idna==3.7
     # via requests
 jinja2==3.1.6
     # via pyramid-jinja2
-kombu==5.5.3
+kombu==5.6.2
     # via celery
 mako==1.2.4
     # via alembic
@@ -64,6 +64,7 @@ oauthlib==3.2.2
 packaging==23.1
     # via
     #   gunicorn
+    #   kombu
     #   zope-sqlalchemy
 pastedeploy==2.1.1
     # via plaster-pastedeploy
@@ -132,6 +133,8 @@ typing-extensions==4.13.0
     #   sqlalchemy
 tzdata==2025.2
     # via kombu
+tzlocal==5.3.1
+    # via celery
 urllib3==2.6.3
     # via
     #   requests

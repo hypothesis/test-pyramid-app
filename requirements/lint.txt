@@ -32,7 +32,7 @@ cachetools==5.3.0
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   google-auth
-celery==5.5.3
+celery==5.6.3
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -147,7 +147,7 @@ jinja2==3.1.6
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   pyramid-jinja2
-kombu==5.5.3
+kombu==5.6.2
     # via
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
@@ -179,6 +179,7 @@ packaging==23.1
     #   -r requirements/tests.txt
     #   build
     #   gunicorn
+    #   kombu
     #   pytest
     #   pytest-factoryboy
     #   zope-sqlalchemy
@@ -350,6 +351,11 @@ tzdata==2025.2
     #   -r requirements/functests.txt
     #   -r requirements/tests.txt
     #   kombu
+tzlocal==5.3.1
+    # via
+    #   -r requirements/functests.txt
+    #   -r requirements/tests.txt
+    #   celery
 urllib3==2.6.3
     # via
     #   -r requirements/functests.txt
