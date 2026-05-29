@@ -20,7 +20,7 @@ cachetools==5.3.0
     # via
     #   -r requirements/prod.txt
     #   google-auth
-celery==5.5.3
+celery==5.6.3
     # via -r requirements/prod.txt
 certifi==2024.7.4
     # via
@@ -79,7 +79,7 @@ jinja2==3.1.6
     # via
     #   -r requirements/prod.txt
     #   pyramid-jinja2
-kombu==5.5.3
+kombu==5.6.2
     # via
     #   -r requirements/prod.txt
     #   celery
@@ -108,6 +108,7 @@ packaging==23.1
     #   -r requirements/prod.txt
     #   build
     #   gunicorn
+    #   kombu
     #   zope-sqlalchemy
 pastedeploy==2.1.1
     # via
@@ -216,6 +217,10 @@ tzdata==2025.2
     # via
     #   -r requirements/prod.txt
     #   kombu
+tzlocal==5.3.1
+    # via
+    #   -r requirements/prod.txt
+    #   celery
 urllib3==2.6.3
     # via
     #   -r requirements/prod.txt
