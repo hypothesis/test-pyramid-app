@@ -236,6 +236,11 @@ pyasn1-modules==0.2.8
     #   -r functests.txt
     #   -r tests.txt
     #   google-auth
+pygments==2.20.0
+    # via
+    #   -r functests.txt
+    #   -r tests.txt
+    #   pytest
 pyjwt==2.12.0
     # via
     #   -r functests.txt
@@ -267,7 +272,7 @@ pyramid-tm==2.6
     # via
     #   -r functests.txt
     #   -r tests.txt
-pytest==8.3.5
+pytest==9.0.3
     # via
     #   -r functests.txt
     #   -r tests.txt
