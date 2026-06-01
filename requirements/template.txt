@@ -40,7 +40,7 @@ pip-tools==7.5.2
     # via
     #   -r template.in
     #   pip-sync-faster
-pygments==2.16.1
+pygments==2.20.0
     # via rich
 pyparsing==3.0.9
     # via packaging
