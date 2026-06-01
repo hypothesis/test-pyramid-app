@@ -287,7 +287,7 @@ zope-interface==5.4.0
     #   pyramid
     #   transaction
     #   zope-sqlalchemy
-zope-sqlalchemy==3.1
+zope-sqlalchemy==4.1
     # via -r requirements/prod.txt
 
 # The following packages are considered to be unsafe in a requirements file:
@@ -304,4 +304,3 @@ setuptools==78.1.1
     #   pyramid
     #   zope-deprecation
     #   zope-interface
-    #   zope-sqlalchemy
