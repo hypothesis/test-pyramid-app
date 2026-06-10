@@ -148,7 +148,7 @@ vine==5.1.0
     #   kombu
 wcwidth==0.2.6
     # via prompt-toolkit
-webob==1.8.8
+webob==1.8.10
     # via pyramid
 zope-deprecation==4.4.0
     # via
