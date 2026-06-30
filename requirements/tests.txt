@@ -189,7 +189,7 @@ pyramid-jinja2==2.10.1
     # via -r requirements/prod.txt
 pyramid-tm==2.6
     # via -r requirements/prod.txt
-pytest==9.0.3
+pytest==9.1.1
     # via
     #   -r requirements/tests.in
     #   pytest-cov
