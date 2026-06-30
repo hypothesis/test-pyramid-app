@@ -195,7 +195,7 @@ pytest==9.0.3
     #   pytest-cov
     #   pytest-factoryboy
     #   pytest-mock
-pytest-cov==7.0.0
+pytest-cov==7.1.0
     # via -r requirements/tests.in
 pytest-factoryboy==2.8.1
     # via -r requirements/tests.in
