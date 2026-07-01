@@ -1,4 +1,3 @@
-pip==26.1
 pyramid
 gunicorn
 newrelic
