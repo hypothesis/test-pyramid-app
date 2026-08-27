@@ -277,7 +277,7 @@ wcwidth==0.2.6
     # via
     #   -r prod.txt
     #   prompt-toolkit
-webob==1.8.8
+webob==1.8.11
     # via
     #   -r prod.txt
     #   pyramid
